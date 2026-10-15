@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router'
 import { deleteOrder, getOrderById, updateOrder } from '../lib/storage'
+import { getSignedPhotoUrl } from '../lib/storage'
 import { type Order, type OrderStatus } from '../lib/supabase'
 import { formatBRL, formatDate, formatWhatsappForDisplay } from '../utils/format'
+import ModelFileUpload from '../components/ModelFileUpload'
 
 export default function OrderDetail() {
   const { id } = useParams()
@@ -10,6 +12,7 @@ export default function OrderDetail() {
   const [order, setOrder] = useState<Order | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState('')
+  const [photoUrls, setPhotoUrls] = useState<string[]>([])
 
   useEffect(() => {
     if (id) loadOrder(id)
@@ -20,6 +23,14 @@ export default function OrderDetail() {
       setLoading(true)
       const data = await getOrderById(orderId)
       setOrder(data)
+
+      // Load signed URLs for photos
+      if (data.photo_paths && data.photo_paths.length > 0) {
+        const urls = await Promise.all(data.photo_paths.map((p) => getSignedPhotoUrl(p)))
+        setPhotoUrls(urls)
+      } else {
+        setPhotoUrls([])
+      }
     } catch (err: unknown) {
       setError(err instanceof Error ? err.message : 'Erro ao carregar encomenda')
     } finally {
@@ -113,6 +124,20 @@ export default function OrderDetail() {
       </header>
 
       <div className="max-w-xl mx-auto px-4 py-6 space-y-6">
+        {/* Photos */}
+        {photoUrls.length > 0 && (
+          <div className="flex gap-3 overflow-x-auto pb-2">
+            {photoUrls.map((url, i) => (
+              <img
+                key={i}
+                src={url}
+                alt="Foto do projeto"
+                className="w-32 h-32 object-cover rounded-lg border border-gray-200 shadow-sm shrink-0"
+              />
+            ))}
+          </div>
+        )}
+
         {/* Status card */}
         <div className="card bg-white p-4 space-y-3">
           <label className="block text-xs font-semibold text-gray-500 uppercase tracking-wider">
@@ -189,6 +214,24 @@ export default function OrderDetail() {
               </div>
             </div>
           )}
+
+          {/* 3MF Model */}
+          <div className="border-t border-gray-100 pt-4">
+            <ModelFileUpload
+              orderId={order.id}
+              modelPath={order.model_3mf_path}
+              modelName={order.model_3mf_name}
+              modelSize={order.model_3mf_size}
+              onChange={async (path, name, size) => {
+                const updated = await updateOrder(order.id, {
+                  model_3mf_path: path,
+                  model_3mf_name: name,
+                  model_3mf_size: size
+                })
+                setOrder(updated)
+              }}
+            />
+          </div>
 
           {/* Customer */}
           {(order.customer_name || order.customer_whatsapp) && (

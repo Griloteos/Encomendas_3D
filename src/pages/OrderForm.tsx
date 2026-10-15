@@ -4,6 +4,8 @@ import { createOrder, getOrderById, updateOrder } from '../lib/storage'
 import { type Color, type OrderStatus } from '../lib/supabase'
 import ColorPicker from '../components/ColorPicker'
 import GramsFields from '../components/GramsFields'
+import PhotoUpload from '../components/PhotoUpload'
+import ModelFileUpload from '../components/ModelFileUpload'
 import { normalizeWhatsapp, parseGrams } from '../utils/format'
 
 export default function OrderForm() {
@@ -21,6 +23,10 @@ export default function OrderForm() {
   const [salePrice, setSalePrice] = useState('0,00')
   const [filamentGramsTotal, setFilamentGramsTotal] = useState('')
   const [colors, setColors] = useState<Color[]>([])
+  const [photoPaths, setPhotoPaths] = useState<string[]>([])
+  const [model3mfPath, setModel3mfPath] = useState<string | null>(null)
+  const [model3mfName, setModel3mfName] = useState<string | null>(null)
+  const [model3mfSize, setModel3mfSize] = useState<number | null>(null)
 
   // Default delivery date: today + 7 days
   const defaultDelivery = new Date()
@@ -46,6 +52,10 @@ export default function OrderForm() {
       setSalePrice(order.sale_price.toFixed(2).replace('.', ','))
       setFilamentGramsTotal(order.filament_grams_total !== null && order.filament_grams_total !== undefined ? String(order.filament_grams_total) : '')
       setColors(order.colors || [])
+      setPhotoPaths(order.photo_paths || [])
+      setModel3mfPath(order.model_3mf_path || null)
+      setModel3mfName(order.model_3mf_name || null)
+      setModel3mfSize(order.model_3mf_size || null)
       setDeliveryDate(order.delivery_date)
       setStatus(order.status)
       setCustomerName(order.customer_name || '')
@@ -92,6 +102,10 @@ export default function OrderForm() {
         sale_price: saleNum,
         filament_grams_total: parseGrams(filamentGramsTotal),
         colors,
+        photo_paths: photoPaths,
+        model_3mf_path: model3mfPath,
+        model_3mf_name: model3mfName,
+        model_3mf_size: model3mfSize,
         delivery_date: deliveryDate,
         status,
         customer_name: customerName.trim() || null,
@@ -203,6 +217,27 @@ export default function OrderForm() {
             onTotalChange={setFilamentGramsTotal}
             colors={colors}
           />
+
+          {/* Photos & 3MF (if editing or temporary order id for new) */}
+          <div className="space-y-4 pt-4 border-t border-gray-200">
+            <PhotoUpload
+              orderId={id || 'temp'}
+              photoPaths={photoPaths}
+              onChange={setPhotoPaths}
+            />
+
+            <ModelFileUpload
+              orderId={id || 'temp'}
+              modelPath={model3mfPath}
+              modelName={model3mfName}
+              modelSize={model3mfSize}
+              onChange={(path, name, size) => {
+                setModel3mfPath(path)
+                setModel3mfName(name)
+                setModel3mfSize(size)
+              }}
+            />
+          </div>
 
           {/* Delivery Date & Status */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
