@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router'
 import { getOrders } from '../lib/storage'
 import { type Order } from '../lib/supabase'
 import { useAuth } from '../lib/auth'
+import { subscribeUserToPush } from '../lib/push'
 import OrderCard from '../components/OrderCard'
 import AlertsBanner from '../components/AlertsBanner'
 
@@ -15,6 +16,7 @@ export default function OrderList() {
   const [activeTab, setActiveTab] = useState<'ativas' | 'arquivadas'>('ativas')
   const [statusFilter, setStatusFilter] = useState<string>('todos')
   const [searchQuery, setSearchQuery] = useState('')
+  const [pushLoading, setPushLoading] = useState(false)
 
   useEffect(() => {
     loadOrders()
@@ -29,6 +31,18 @@ export default function OrderList() {
       setError(err instanceof Error ? err.message : 'Erro ao carregar encomendas')
     } finally {
       setLoading(false)
+    }
+  }
+
+  async function handleEnablePush() {
+    try {
+      setPushLoading(true)
+      await subscribeUserToPush()
+      alert('Lembretes diários ativados com sucesso!')
+    } catch (err: unknown) {
+      alert(err instanceof Error ? err.message : 'Erro ao ativar lembretes')
+    } finally {
+      setPushLoading(false)
     }
   }
 
@@ -57,12 +71,22 @@ export default function OrderList() {
       {/* Header */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-10 px-4 py-3 flex items-center justify-between">
         <h1 className="text-xl font-bold text-gray-800 m-0">Encomendas 3D</h1>
-        <button
-          onClick={() => signOut()}
-          className="text-sm font-medium text-gray-600 hover:text-gray-900 px-3 py-1.5 rounded-lg border border-gray-200"
-        >
-          Sair
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={handleEnablePush}
+            disabled={pushLoading}
+            className="text-xs font-medium text-blue-600 hover:text-blue-800 bg-blue-50 px-2.5 py-1.5 rounded-lg border border-blue-200"
+            title="Ativar notificações push diárias às 08:00"
+          >
+            {pushLoading ? 'Ativando...' : 'Ativar Lembretes'}
+          </button>
+          <button
+            onClick={() => signOut()}
+            className="text-sm font-medium text-gray-600 hover:text-gray-900 px-3 py-1.5 rounded-lg border border-gray-200"
+          >
+            Sair
+          </button>
+        </div>
       </header>
 
       {/* Tabs */}
