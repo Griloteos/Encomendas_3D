@@ -1,7 +1,7 @@
--- Create orders table
+-- Create orders table idempotently
 create extension if not exists pgcrypto;
 
-create table public.orders (
+create table if not exists public.orders (
   id                    uuid primary key default gen_random_uuid(),
   user_id               uuid not null default auth.uid()
                         references auth.users(id) on delete cascade,
@@ -26,7 +26,7 @@ create table public.orders (
   updated_at            timestamptz not null default now()
 );
 
-create index orders_user_status_delivery_idx
+create index if not exists orders_user_status_delivery_idx
   on public.orders (user_id, status, delivery_date);
 
 create or replace function public.set_updated_at() returns trigger
@@ -36,18 +36,20 @@ begin
   return new;
 end $$;
 
+drop trigger if exists orders_set_updated_at on public.orders;
 create trigger orders_set_updated_at
   before update on public.orders
   for each row execute function public.set_updated_at();
 
 alter table public.orders enable row level security;
 
+drop policy if exists "owner full access" on public.orders;
 create policy "owner full access" on public.orders
   for all using (auth.uid() = user_id)
   with check (auth.uid() = user_id);
 
--- Create push subscriptions table
-create table public.push_subscriptions (
+-- Create push subscriptions table idempotently
+create table if not exists public.push_subscriptions (
   id         uuid primary key default gen_random_uuid(),
   user_id    uuid not null default auth.uid() references auth.users(id) on delete cascade,
   endpoint   text not null unique,
@@ -58,6 +60,7 @@ create table public.push_subscriptions (
 
 alter table public.push_subscriptions enable row level security;
 
+drop policy if exists "owner full access" on public.push_subscriptions;
 create policy "owner full access" on public.push_subscriptions
   for all using (auth.uid() = user_id)
   with check (auth.uid() = user_id);

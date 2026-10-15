@@ -1,12 +1,21 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router'
 import { useAuth } from '../lib/auth'
 
 export default function Login() {
-  const { signIn } = useAuth()
+  const { signIn, session } = useAuth()
+  const navigate = useNavigate()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
+
+  // If already logged in, redirect to /pedidos
+  useEffect(() => {
+    if (session) {
+      navigate('/pedidos', { replace: true })
+    }
+  }, [session, navigate])
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
@@ -15,10 +24,10 @@ export default function Login() {
 
     try {
       await signIn(email, password)
+      navigate('/pedidos', { replace: true })
     } catch (err: unknown) {
       const errorMessage = err instanceof Error ? err.message : 'Erro ao fazer login'
       setError(errorMessage)
-    } finally {
       setLoading(false)
     }
   }
