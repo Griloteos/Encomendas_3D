@@ -70,15 +70,23 @@ export default function OrderList() {
     <div className="min-h-screen bg-gray-50 pb-24">
       {/* Header */}
       <header className="bg-white border-b border-gray-200 sticky top-0 z-10 px-4 py-3 flex items-center justify-between">
-        <h1 className="text-xl font-bold text-gray-800 m-0">Encomendas 3D</h1>
+        <div className="flex items-center gap-4">
+          <h1 className="text-xl font-bold text-gray-800 m-0">Encomendas 3D</h1>
+          <button
+            onClick={() => navigate('/lembretes')}
+            className="text-sm font-medium text-blue-600 hover:text-blue-800 bg-blue-50 px-3 py-1.5 rounded-lg border border-blue-200"
+          >
+            Lembretes
+          </button>
+        </div>
         <div className="flex items-center gap-2">
           <button
             onClick={handleEnablePush}
             disabled={pushLoading}
-            className="text-xs font-medium text-blue-600 hover:text-blue-800 bg-blue-50 px-2.5 py-1.5 rounded-lg border border-blue-200"
+            className="text-xs font-medium text-gray-600 hover:text-gray-800 bg-gray-50 px-2.5 py-1.5 rounded-lg border border-gray-200"
             title="Ativar notificações push diárias às 08:00"
           >
-            {pushLoading ? 'Ativando...' : 'Ativar Lembretes'}
+            {pushLoading ? 'Ativando...' : 'Ativar Push'}
           </button>
           <button
             onClick={() => signOut()}

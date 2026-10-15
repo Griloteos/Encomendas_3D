@@ -1,6 +1,6 @@
 // API Utilities for Supabase operations
 
-import { supabase, type Order } from './supabase'
+import { supabase, type Order, type Reminder } from './supabase'
 
 // Orders CRUD
 export async function getOrders() {
@@ -50,6 +50,60 @@ export async function updateOrder(id: string, updates: Partial<Order>) {
 export async function deleteOrder(id: string) {
   const { error } = await supabase
     .from('orders')
+    .delete()
+    .eq('id', id)
+
+  if (error) throw error
+}
+
+// Reminders CRUD
+export async function getReminders() {
+  const { data, error } = await supabase
+    .from('reminders')
+    .select('*')
+    .order('due_date', { ascending: true, nullsFirst: false })
+
+  if (error) throw error
+  return data as Reminder[]
+}
+
+export async function getReminderById(id: string) {
+  const { data, error } = await supabase
+    .from('reminders')
+    .select('*')
+    .eq('id', id)
+    .single()
+
+  if (error) throw error
+  return data as Reminder
+}
+
+export async function createReminder(reminder: Partial<Reminder>) {
+  const { data, error } = await supabase
+    .from('reminders')
+    .insert(reminder)
+    .select()
+    .single()
+
+  if (error) throw error
+  return data as Reminder
+}
+
+export async function updateReminder(id: string, updates: Partial<Reminder>) {
+  const { data, error } = await supabase
+    .from('reminders')
+    .update(updates)
+    .eq('id', id)
+    .select()
+    .single()
+
+  if (error) throw error
+  return data as Reminder
+}
+
+export async function deleteReminder(id: string) {
+  const { error } = await supabase
+    .from('reminders')
     .delete()
     .eq('id', id)
 

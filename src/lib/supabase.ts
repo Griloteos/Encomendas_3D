@@ -37,3 +37,19 @@ export interface Order {
   created_at: string
   updated_at: string
 }
+
+export type ReminderCategory = 'Geral' | 'Financeiro' | 'Cliente' | 'Manutenção'
+
+export interface Reminder {
+  id: string
+  user_id: string
+  title: string
+  description?: string | null
+  category: ReminderCategory
+  due_date?: string | null
+  completed: boolean
+  order_id?: string | null
+  notify_at?: string | null
+  created_at: string
+  updated_at: string
+}

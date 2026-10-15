@@ -5,6 +5,8 @@ import ProtectedLayout from './components/ProtectedLayout'
 import OrderList from './pages/OrderList'
 import OrderForm from './pages/OrderForm'
 import OrderDetail from './pages/OrderDetail'
+import ReminderList from './pages/ReminderList'
+import ReminderForm from './pages/ReminderForm'
 import './App.css'
 
 export default function App() {
@@ -18,6 +20,9 @@ export default function App() {
             <Route path="/pedidos/novo" element={<OrderForm />} />
             <Route path="/pedidos/:id" element={<OrderDetail />} />
             <Route path="/pedidos/:id/editar" element={<OrderForm />} />
+            <Route path="/lembretes" element={<ReminderList />} />
+            <Route path="/lembretes/novo" element={<ReminderForm />} />
+            <Route path="/lembretes/:id/editar" element={<ReminderForm />} />
             <Route path="/" element={<Navigate to="/pedidos" replace />} />
           </Route>
           <Route path="*" element={<Navigate to="/" replace />} />
