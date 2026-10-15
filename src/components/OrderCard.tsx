@@ -1,5 +1,6 @@
 import { type Order } from '../lib/supabase'
 import { formatBRL, formatDate, formatWhatsappForDisplay } from '../utils/format'
+import DeadlineTag from './DeadlineTag'
 
 interface OrderCardProps {
   order: Order
@@ -29,9 +30,12 @@ export default function OrderCard({ order, onSelect }: OrderCardProps) {
             <p className="text-sm text-gray-600 truncate">Cliente: {order.customer_name}</p>
           )}
         </div>
-        <span className={`badge ${statusInfo.bg} ${statusInfo.text} shrink-0`}>
-          {statusInfo.label}
-        </span>
+        <div className="flex flex-col items-end gap-1.5 shrink-0">
+          <span className={`badge ${statusInfo.bg} ${statusInfo.text}`}>
+            {statusInfo.label}
+          </span>
+          {order.status !== 'entregue' && <DeadlineTag deliveryDate={order.delivery_date} />}
+        </div>
       </div>
 
       {/* Colors & Grams */}

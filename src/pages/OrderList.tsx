@@ -4,6 +4,7 @@ import { getOrders } from '../lib/storage'
 import { type Order } from '../lib/supabase'
 import { useAuth } from '../lib/auth'
 import OrderCard from '../components/OrderCard'
+import AlertsBanner from '../components/AlertsBanner'
 
 export default function OrderList() {
   const { signOut } = useAuth()
@@ -106,26 +107,29 @@ export default function OrderList() {
           />
 
           {activeTab === 'ativas' && (
-            <div className="flex gap-2 overflow-x-auto pb-1 no-scrollbar">
-              {[
-                { key: 'todos', label: 'Todas' },
-                { key: 'pendente', label: 'Pendente' },
-                { key: 'imprimindo', label: 'Imprimindo' },
-                { key: 'pronto', label: 'Pronto' }
-              ].map((filter) => (
-                <button
-                  key={filter.key}
-                  onClick={() => setStatusFilter(filter.key)}
-                  className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors ${
-                    statusFilter === filter.key
-                      ? 'bg-blue-600 text-white'
-                      : 'bg-white border border-gray-200 text-gray-700 hover:bg-gray-100'
-                  }`}
-                >
-                  {filter.label}
-                </button>
-              ))}
-            </div>
+            <>
+              <AlertsBanner orders={orders} onSelectOrder={(o) => navigate(`/pedidos/${o.id}`)} />
+              <div className="flex gap-2 overflow-x-auto pb-1 no-scrollbar">
+                {[
+                  { key: 'todos', label: 'Todas' },
+                  { key: 'pendente', label: 'Pendente' },
+                  { key: 'imprimindo', label: 'Imprimindo' },
+                  { key: 'pronto', label: 'Pronto' }
+                ].map((filter) => (
+                  <button
+                    key={filter.key}
+                    onClick={() => setStatusFilter(filter.key)}
+                    className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors ${
+                      statusFilter === filter.key
+                        ? 'bg-blue-600 text-white'
+                        : 'bg-white border border-gray-200 text-gray-700 hover:bg-gray-100'
+                    }`}
+                  >
+                    {filter.label}
+                  </button>
+                ))}
+              </div>
+            </>
           )}
         </div>
 
