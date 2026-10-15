@@ -23,17 +23,17 @@ export interface Order {
   title: string
   cost_price: number
   sale_price: number
-  filament_grams_total?: number
+  filament_grams_total?: number | null
   colors: Color[]
   delivery_date: string
   status: OrderStatus
-  customer_name?: string
-  customer_whatsapp?: string
+  customer_name?: string | null
+  customer_whatsapp?: string | null
   photo_paths: string[]
-  model_3mf_path?: string
-  model_3mf_name?: string
-  model_3mf_size?: number
-  delivered_at?: string
+  model_3mf_path?: string | null
+  model_3mf_name?: string | null
+  model_3mf_size?: number | null
+  delivered_at?: string | null
   created_at: string
   updated_at: string
 }

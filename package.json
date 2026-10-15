@@ -30,5 +30,10 @@
     "typescript": "~6.0.2",
     "vite": "^8.3.0",
     "vite-plugin-pwa": "^2.0.0"
-  }
+  },
+  "description": "Aplicativo de gestão de encomendas de impressão 3D. Uma lista de tarefas profissional para acompanhar seus projetos do início ao fim, com sincronização em tempo real entre Android e computador.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
