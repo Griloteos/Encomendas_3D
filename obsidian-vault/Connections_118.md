@@ -1,0 +1,17 @@
+---
+source_file: "obsidian-vault/split.test.js.md"
+type: "document"
+community: "split.test.js.md"
+location: "L14"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/splittestjsmd
+---
+
+# Connections
+
+## Connections
+- [[split.test.js_1]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/splittestjsmd

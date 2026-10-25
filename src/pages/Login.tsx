@@ -33,16 +33,19 @@ export default function Login() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
-      <div className="w-full max-w-sm">
+    <div className="min-h-screen flex items-center justify-center bg-[#0f1117] p-4 text-[#c8cad3]">
+      <div className="w-full max-w-sm bg-[#161822] border border-[#282a3a] rounded-2xl p-6 shadow-xl">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-gray-800">Encomendas 3D</h1>
-          <p className="text-gray-600 mt-2">Gerencie suas encomendas</p>
+          <div className="w-12 h-12 bg-indigo-600/20 border border-indigo-500/30 rounded-xl flex items-center justify-center mx-auto mb-3 text-2xl">
+            🖨️
+          </div>
+          <h1 className="text-2xl font-bold text-white tracking-tight">Encomendas 3D</h1>
+          <p className="text-[#9ca0b0] text-sm mt-1">Gerencie suas impressões 3D</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="email" className="block text-sm font-medium text-[#c8cad3] mb-1">
               E-mail
             </label>
             <input
@@ -50,7 +53,7 @@ export default function Login() {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+              className="w-full px-4 py-3 bg-[#1e2030] border border-[#353849] rounded-xl text-white focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none placeholder-[#6b6f80]"
               placeholder="seu@email.com"
               required
               autoComplete="email"
@@ -58,7 +61,7 @@ export default function Login() {
           </div>
 
           <div>
-            <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="password" className="block text-sm font-medium text-[#c8cad3] mb-1">
               Senha
             </label>
             <input
@@ -66,7 +69,7 @@ export default function Login() {
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none"
+              className="w-full px-4 py-3 bg-[#1e2030] border border-[#353849] rounded-xl text-white focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 outline-none placeholder-[#6b6f80]"
               placeholder="Sua senha"
               required
               autoComplete="current-password"
@@ -74,15 +77,15 @@ export default function Login() {
           </div>
 
           {error && (
-            <div className="p-3 bg-red-50 border border-red-200 rounded-lg">
-              <p className="text-sm text-red-600">{error}</p>
+            <div className="p-3 bg-red-950/80 border border-red-800/60 rounded-xl">
+              <p className="text-sm text-red-200">{error}</p>
             </div>
           )}
 
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            className="w-full py-3 bg-indigo-600 text-white font-semibold rounded-xl hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors shadow-lg shadow-indigo-600/20"
           >
             {loading ? 'Entrando...' : 'Entrar'}
           </button>

@@ -6,10 +6,10 @@ import { useAuth } from '../lib/auth'
 import { formatDate } from '../utils/format'
 
 const categoryColors: Record<ReminderCategory, { bg: string; text: string }> = {
-  Geral: { bg: 'bg-gray-100', text: 'text-gray-800' },
-  Financeiro: { bg: 'bg-emerald-100', text: 'text-emerald-800' },
-  Cliente: { bg: 'bg-blue-100', text: 'text-blue-800' },
-  Manutenção: { bg: 'bg-amber-100', text: 'text-amber-800' }
+  Geral: { bg: 'bg-zinc-800', text: 'text-zinc-300 border border-zinc-700' },
+  Financeiro: { bg: 'bg-emerald-950/80', text: 'text-emerald-300 border border-emerald-800/60' },
+  Cliente: { bg: 'bg-blue-950/80', text: 'text-blue-300 border border-blue-800/60' },
+  Manutenção: { bg: 'bg-amber-950/80', text: 'text-amber-300 border border-amber-800/60' }
 }
 
 export default function ReminderList() {
@@ -31,7 +31,7 @@ export default function ReminderList() {
       const data = await getReminders()
       setReminders(data)
     } catch (err: unknown) {
-      setError(err instanceof Error ? err.message : 'Erro ao carregar lembretes')
+      setError(err instanceof Error ? err.message : 'Erro ao carregar lembretes. Verifique se a tabela de lembretes foi criada no Supabase.')
     } finally {
       setLoading(false)
     }
@@ -87,37 +87,61 @@ export default function ReminderList() {
   })
 
   return (
-    <div className="min-h-screen bg-gray-50 pb-24">
+    <div className="min-h-screen bg-[#0f1117] text-[#c8cad3] pb-24">
       {/* Header */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-10 px-4 py-3 flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <h1 className="text-xl font-bold text-gray-800 m-0">Lembretes</h1>
-          <nav className="flex gap-2">
-            <button
-              onClick={() => navigate('/pedidos')}
-              className="text-sm text-gray-600 hover:text-gray-900 font-medium"
-            >
-              Encomendas
-            </button>
-          </nav>
+      <header className="bg-[#161822] border-b border-[#282a3a] sticky top-0 z-10 px-4 py-3 flex items-center justify-between shadow-sm">
+        <div className="flex items-center gap-3">
+          <h1 className="text-xl font-bold text-white tracking-tight m-0">Lembretes & Tarefas</h1>
         </div>
-        <button
-          onClick={() => signOut()}
-          className="text-sm font-medium text-gray-600 hover:text-gray-900 px-3 py-1.5 rounded-lg border border-gray-200"
-        >
-          Sair
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => navigate('/relatorio')}
+            className="text-xs font-medium text-indigo-400 hover:text-indigo-300 px-3 py-1.5 rounded-lg bg-[#282a3a] border border-[#353849] transition-colors"
+            title="Ver relatório de pendências"
+          >
+            📋 Relatório
+          </button>
+          <button
+            onClick={() => navigate('/notificacoes')}
+            className="text-xs font-medium text-amber-400 hover:text-amber-300 px-3 py-1.5 rounded-lg bg-[#282a3a] border border-[#353849] transition-colors"
+            title="Configurar notificações automáticas"
+          >
+            🔔 Notificações
+          </button>
+          <button
+            onClick={() => signOut()}
+            className="text-xs font-medium text-[#c8cad3] hover:text-white px-3 py-1.5 rounded-lg bg-[#282a3a] border border-[#353849] transition-colors"
+          >
+            Sair
+          </button>
+        </div>
       </header>
 
-      {/* Tabs */}
-      <div className="max-w-3xl mx-auto px-4 mt-4">
-        <div className="flex border-b border-gray-200">
+      {/* Main Navigation Switcher (Encomendas / Lembretes) */}
+      <div className="max-w-3xl mx-auto px-4 pt-4">
+        <div className="flex bg-[#161822] p-1 rounded-xl border border-[#282a3a]">
+          <button
+            onClick={() => navigate('/pedidos')}
+            className="flex-1 py-2 rounded-lg text-sm font-semibold text-[#9ca0b0] hover:text-white transition-all"
+          >
+            📦 Encomendas
+          </button>
+          <button
+            onClick={() => navigate('/lembretes')}
+            className="flex-1 py-2 rounded-lg text-sm font-semibold bg-indigo-600 text-white shadow-sm transition-all"
+          >
+            📝 Lembretes
+          </button>
+        </div>
+
+        {/* Tabs (Pendentes / Concluídos) */}
+        <div className="flex border-b border-[#282a3a] mt-4">
           <button
             onClick={() => setActiveTab('pendentes')}
             className={`flex-1 py-3 text-center font-medium text-sm border-b-2 transition-colors ${
               activeTab === 'pendentes'
-                ? 'border-blue-600 text-blue-600'
-                : 'border-transparent text-gray-500 hover:text-gray-700'
+                ? 'border-indigo-500 text-indigo-400 font-semibold'
+                : 'border-transparent text-[#9ca0b0] hover:text-[#c8cad3]'
             }`}
           >
             Pendentes ({reminders.filter((r) => !r.completed).length})
@@ -126,8 +150,8 @@ export default function ReminderList() {
             onClick={() => setActiveTab('concluidos')}
             className={`flex-1 py-3 text-center font-medium text-sm border-b-2 transition-colors ${
               activeTab === 'concluidos'
-                ? 'border-blue-600 text-blue-600'
-                : 'border-transparent text-gray-500 hover:text-gray-700'
+                ? 'border-indigo-500 text-indigo-400 font-semibold'
+                : 'border-transparent text-[#9ca0b0] hover:text-[#c8cad3]'
             }`}
           >
             Concluídos ({reminders.filter((r) => r.completed).length})
@@ -142,8 +166,8 @@ export default function ReminderList() {
               onClick={() => setSelectedCategory(cat)}
               className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors ${
                 selectedCategory === cat
-                  ? 'bg-blue-600 text-white'
-                  : 'bg-white border border-gray-200 text-gray-700 hover:bg-gray-100'
+                  ? 'bg-indigo-600 text-white'
+                  : 'bg-[#161822] border border-[#282a3a] text-[#c8cad3] hover:bg-[#1e2030]'
               }`}
             >
               {cat === 'todos' ? 'Todas Categorias' : cat}
@@ -152,8 +176,12 @@ export default function ReminderList() {
         </div>
 
         {error && (
-          <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-600">
-            {error}
+          <div className="mt-4 p-4 bg-amber-950/80 border border-amber-800/60 rounded-xl text-sm text-amber-200 space-y-2">
+            <p className="font-semibold">⚠️ Nota sobre a Tabela de Lembretes:</p>
+            <p>{error}</p>
+            <p className="text-xs text-amber-300/80">
+              Caso seja o seu primeiro acesso aos lembretes, certifique-se de executar o arquivo de migração SQL (<code className="bg-amber-900/60 px-1 py-0.5 rounded">20261015000001_reminders.sql</code>) no SQL Editor do seu projeto Supabase.
+            </p>
           </div>
         )}
 
@@ -162,17 +190,17 @@ export default function ReminderList() {
           {loading ? (
             <div className="space-y-3">
               {[1, 2, 3].map((n) => (
-                <div key={n} className="card h-20 skeleton bg-white" />
+                <div key={n} className="card h-20 skeleton bg-[#161822] border-[#282a3a]" />
               ))}
             </div>
           ) : filteredReminders.length === 0 ? (
-            <div className="text-center py-12 bg-white rounded-lg border border-gray-200 p-6">
-              <p className="text-gray-500 text-base">Nenhum lembrete encontrado.</p>
+            <div className="text-center py-12 bg-[#161822] rounded-xl border border-[#282a3a] p-6">
+              <p className="text-[#9ca0b0] text-base">Nenhum lembrete encontrado.</p>
               <button
                 onClick={() => navigate('/lembretes/novo')}
-                className="mt-4 btn-primary inline-flex items-center gap-2 text-sm"
+                className="mt-4 btn-primary inline-flex items-center gap-2 text-sm bg-indigo-600 hover:bg-indigo-700"
               >
-                Criar primeiro lembrete
+                + Criar primeiro lembrete
               </button>
             </div>
           ) : (
@@ -181,8 +209,8 @@ export default function ReminderList() {
               return (
                 <div
                   key={reminder.id}
-                  className={`card bg-white border border-gray-200 rounded-lg p-4 flex items-start justify-between gap-3 transition-opacity ${
-                    reminder.completed ? 'opacity-60 bg-gray-50' : ''
+                  className={`card bg-[#161822] border border-[#282a3a] rounded-xl p-4 flex items-start justify-between gap-3 transition-opacity ${
+                    reminder.completed ? 'opacity-50 bg-[#12141c]' : ''
                   }`}
                 >
                   <div className="flex items-start gap-3 flex-1 min-w-0">
@@ -190,13 +218,13 @@ export default function ReminderList() {
                       type="checkbox"
                       checked={reminder.completed}
                       onChange={() => toggleComplete(reminder)}
-                      className="w-5 h-5 text-blue-600 rounded border-gray-300 focus:ring-blue-500 mt-1 cursor-pointer"
+                      className="w-5 h-5 text-indigo-600 rounded bg-[#1e2030] border-[#353849] focus:ring-indigo-500 mt-1 cursor-pointer"
                     />
                     <div className="space-y-1 min-w-0 flex-1">
                       <div className="flex items-center gap-2 flex-wrap">
                         <h3
-                          className={`font-semibold text-gray-900 text-base truncate ${
-                            reminder.completed ? 'line-through text-gray-500' : ''
+                          className={`font-semibold text-white text-base truncate ${
+                            reminder.completed ? 'line-through text-[#6b6f80]' : ''
                           }`}
                         >
                           {reminder.title}
@@ -206,12 +234,12 @@ export default function ReminderList() {
                         </span>
                       </div>
                       {reminder.description && (
-                        <p className="text-sm text-gray-600 whitespace-pre-wrap">{reminder.description}</p>
+                        <p className="text-sm text-[#9ca0b0] whitespace-pre-wrap">{reminder.description}</p>
                       )}
-                      <div className="flex items-center gap-3 text-xs text-gray-500 pt-1">
+                      <div className="flex items-center gap-3 text-xs text-[#6b6f80] pt-1">
                         {reminder.due_date && <span>📅 {formatDate(reminder.due_date)}</span>}
                         {reminder.order_id && (
-                          <span className="text-blue-600 font-medium">🔗 Vinculado a projeto</span>
+                          <span className="text-indigo-400 font-medium">🔗 Vinculado a projeto</span>
                         )}
                       </div>
                     </div>
@@ -222,7 +250,7 @@ export default function ReminderList() {
                       <button
                         type="button"
                         onClick={() => handleConvertToProjectNote(reminder)}
-                        className="text-xs bg-purple-50 text-purple-700 border border-purple-200 px-2.5 py-1.5 rounded hover:bg-purple-100 transition-colors"
+                        className="text-xs bg-purple-950/80 text-purple-300 border border-purple-800/60 px-2.5 py-1.5 rounded-lg hover:bg-purple-900/80 transition-colors"
                         title="Converter em nota/observação de projeto"
                       >
                         Converter p/ Projeto
@@ -230,13 +258,13 @@ export default function ReminderList() {
                     )}
                     <button
                       onClick={() => navigate(`/lembretes/${reminder.id}/editar`)}
-                      className="text-xs text-gray-600 hover:text-gray-900 px-2 py-1 border border-gray-200 rounded"
+                      className="text-xs text-[#c8cad3] hover:text-white px-2.5 py-1.5 bg-[#282a3a] border border-[#353849] rounded-lg transition-colors"
                     >
                       Editar
                     </button>
                     <button
                       onClick={() => handleDelete(reminder.id)}
-                      className="text-xs text-red-600 hover:text-red-800 px-2 py-1 border border-red-200 rounded"
+                      className="text-xs text-red-400 hover:text-red-300 px-2.5 py-1.5 bg-red-950/40 border border-red-900/50 rounded-lg transition-colors"
                     >
                       Excluir
                     </button>
@@ -251,7 +279,7 @@ export default function ReminderList() {
       {/* Floating Action Button (+) */}
       <button
         onClick={() => navigate('/lembretes/novo')}
-        className="fixed bottom-6 right-6 w-14 h-14 bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center text-3xl hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 transition-transform active:scale-95 z-20"
+        className="fixed bottom-6 right-6 w-14 h-14 bg-indigo-600 text-white rounded-full shadow-2xl flex items-center justify-center text-3xl hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-500/30 transition-transform active:scale-95 z-20"
         title="Novo lembrete"
       >
         +

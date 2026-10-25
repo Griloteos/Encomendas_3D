@@ -1,0 +1,17 @@
+---
+source_file: ".claude/skills/agent-skills/skills/git-workflow-and-versioning/SKILL.md"
+type: "document"
+community: "Git Workflow and Versioning"
+location: "L286"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Git_Workflow_and_Versioning
+---
+
+# Tag the release, and let the tag be the source of truth
+
+## Connections
+- [[Release & Versioning]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Git_Workflow_and_Versioning

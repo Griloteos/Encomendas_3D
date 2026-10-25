@@ -1,0 +1,17 @@
+---
+source_file: "obsidian-vault/_COMMUNITY_Community 26.md"
+type: "document"
+community: "_COMMUNITY_Community 26.md"
+location: "L22"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/_COMMUNITY_Community_26md
+---
+
+# Live Query (requires Dataview plugin)
+
+## Connections
+- [[Community 26]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/_COMMUNITY_Community_26md

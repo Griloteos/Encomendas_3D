@@ -80,7 +80,7 @@ export default function ReminderForm() {
       }
       navigate('/lembretes')
     } catch (err: unknown) {
-      setError(err instanceof Error ? err.message : 'Erro ao salvar lembrete')
+      setError(err instanceof Error ? err.message : 'Erro ao salvar lembrete. Verifique se a tabela de lembretes foi criada no Supabase.')
     } finally {
       setLoading(false)
     }
@@ -88,24 +88,24 @@ export default function ReminderForm() {
 
   if (fetching) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-blue-600"></div>
+      <div className="min-h-screen bg-[#0f1117] flex items-center justify-center">
+        <div className="animate-spin rounded-full h-10 w-10 border-b-2 border-indigo-500"></div>
       </div>
     )
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 pb-24">
+    <div className="min-h-screen bg-[#0f1117] text-[#c8cad3] pb-24">
       {/* Header */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-10 px-4 py-3 flex items-center justify-between">
+      <header className="bg-[#161822] border-b border-[#282a3a] sticky top-0 z-10 px-4 py-3 flex items-center justify-between shadow-sm">
         <div className="flex items-center gap-3">
           <button
             onClick={() => navigate('/lembretes')}
-            className="text-gray-600 hover:text-gray-900 font-medium text-sm"
+            className="text-[#9ca0b0] hover:text-white font-medium text-sm flex items-center gap-1 transition-colors"
           >
             ← Voltar
           </button>
-          <h1 className="text-lg font-bold text-gray-800 m-0">
+          <h1 className="text-lg font-bold text-white m-0">
             {isEditing ? 'Editar Lembrete' : 'Novo Lembrete'}
           </h1>
         </div>
@@ -114,14 +114,14 @@ export default function ReminderForm() {
       <div className="max-w-xl mx-auto px-4 py-6">
         <form onSubmit={handleSubmit} className="space-y-6">
           {error && (
-            <div className="p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-600">
+            <div className="p-4 bg-red-950/80 border border-red-800/60 rounded-xl text-sm text-red-200">
               {error}
             </div>
           )}
 
           {/* Title */}
           <div>
-            <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="title" className="block text-sm font-medium text-[#c8cad3] mb-1">
               Título / Tarefa *
             </label>
             <input
@@ -131,21 +131,21 @@ export default function ReminderForm() {
               value={title}
               onChange={(e) => setTitle(e.target.value)}
               placeholder="Ex: Relembrar pagamento do João"
-              className="input-field"
+              className="input-field bg-[#161822] text-white border-[#282a3a] placeholder-[#6b6f80]"
               required
             />
           </div>
 
           {/* Category */}
           <div>
-            <label htmlFor="category" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="category" className="block text-sm font-medium text-[#c8cad3] mb-1">
               Categoria *
             </label>
             <select
               id="category"
               value={category}
               onChange={(e) => setCategory(e.target.value as ReminderCategory)}
-              className="input-field bg-white"
+              className="input-field bg-[#161822] text-white border-[#282a3a]"
             >
               <option value="Geral">Geral</option>
               <option value="Financeiro">Financeiro</option>
@@ -156,7 +156,7 @@ export default function ReminderForm() {
 
           {/* Description */}
           <div>
-            <label htmlFor="description" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="description" className="block text-sm font-medium text-[#c8cad3] mb-1">
               Descrição / Observação
             </label>
             <textarea
@@ -165,14 +165,14 @@ export default function ReminderForm() {
               value={description}
               onChange={(e) => setDescription(e.target.value)}
               placeholder="Detalhes adicionais..."
-              className="input-field"
+              className="input-field bg-[#161822] text-white border-[#282a3a] placeholder-[#6b6f80]"
             />
           </div>
 
           {/* Due date & Notify */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="due_date" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="due_date" className="block text-sm font-medium text-[#c8cad3] mb-1">
                 Data Limite
               </label>
               <input
@@ -180,11 +180,11 @@ export default function ReminderForm() {
                 type="date"
                 value={dueDate}
                 onChange={(e) => setDueDate(e.target.value)}
-                className="input-field"
+                className="input-field bg-[#161822] text-white border-[#282a3a]"
               />
             </div>
             <div>
-              <label htmlFor="notify_at" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="notify_at" className="block text-sm font-medium text-[#c8cad3] mb-1">
                 Data/Hora Notificação
               </label>
               <input
@@ -192,21 +192,21 @@ export default function ReminderForm() {
                 type="datetime-local"
                 value={notifyAt}
                 onChange={(e) => setNotifyAt(e.target.value)}
-                className="input-field"
+                className="input-field bg-[#161822] text-white border-[#282a3a]"
               />
             </div>
           </div>
 
           {/* Link to order */}
           <div>
-            <label htmlFor="order_id" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="order_id" className="block text-sm font-medium text-[#c8cad3] mb-1">
               Vincular a Encomenda / Projeto (Opcional)
             </label>
             <select
               id="order_id"
               value={orderId}
               onChange={(e) => setOrderId(e.target.value)}
-              className="input-field bg-white"
+              className="input-field bg-[#161822] text-white border-[#282a3a]"
             >
               <option value="">Nenhuma encomenda vinculada</option>
               {orders.map((o) => (
@@ -222,14 +222,14 @@ export default function ReminderForm() {
             <button
               type="button"
               onClick={() => navigate('/lembretes')}
-              className="flex-1 btn-secondary"
+              className="flex-1 btn-secondary bg-[#282a3a] border-[#353849] text-[#c8cad3] hover:bg-[#353849] hover:text-white"
             >
               Cancelar
             </button>
             <button
               type="submit"
               disabled={loading}
-              className="flex-1 btn-primary"
+              className="flex-1 btn-primary bg-indigo-600 hover:bg-indigo-700 text-white font-semibold"
             >
               {loading ? 'Salvando...' : 'Salvar Lembrete'}
             </button>

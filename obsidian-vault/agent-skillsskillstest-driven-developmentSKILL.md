@@ -1,0 +1,18 @@
+---
+source_file: ".claude/skills/agent-skills/skills/test-driven-development/SKILL.md"
+type: "document"
+community: "Test-Driven Development"
+location: "L1"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Test-Driven_Development
+---
+
+# agent-skills/skills/test-driven-development/SKILL.md
+
+## Connections
+- [[Test-Driven Development]] - `contains` [EXTRACTED]
+- [[agent-skillsREADME]] - `references` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Test-Driven_Development

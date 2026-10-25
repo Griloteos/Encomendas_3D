@@ -67,39 +67,56 @@ export default function OrderList() {
   })
 
   return (
-    <div className="min-h-screen bg-gray-50 pb-24">
+    <div className="min-h-screen bg-[#0f1117] text-[#c8cad3] pb-24">
       {/* Header */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-10 px-4 py-3 flex items-center justify-between">
-        <div className="flex items-center gap-4">
-          <h1 className="text-xl font-bold text-gray-800 m-0">Encomendas 3D</h1>
-          <button
-            onClick={() => navigate('/lembretes')}
-            className="text-sm font-medium text-blue-600 hover:text-blue-800 bg-blue-50 px-3 py-1.5 rounded-lg border border-blue-200"
-          >
-            Lembretes
-          </button>
+      <header className="bg-[#161822] border-b border-[#282a3a] sticky top-0 z-10 px-4 py-3 flex items-center justify-between shadow-sm">
+        <div className="flex items-center gap-3">
+          <h1 className="text-xl font-bold text-white tracking-tight m-0">Encomendas 3D</h1>
         </div>
         <div className="flex items-center gap-2">
           <button
+            onClick={() => navigate('/relatorio')}
+            className="text-xs font-medium text-indigo-400 hover:text-indigo-300 px-2.5 py-1.5 rounded-lg bg-[#282a3a] border border-[#353849] transition-colors"
+            title="Ver relatório de pendências"
+          >
+            📋 Relatório
+          </button>
+          <button
             onClick={handleEnablePush}
             disabled={pushLoading}
-            className="text-xs font-medium text-gray-600 hover:text-gray-800 bg-gray-50 px-2.5 py-1.5 rounded-lg border border-gray-200"
+            className="text-xs font-medium text-indigo-300 bg-indigo-950/60 hover:bg-indigo-900/60 px-2.5 py-1.5 rounded-lg border border-indigo-800/50 transition-colors"
             title="Ativar notificações push diárias às 08:00"
           >
-            {pushLoading ? 'Ativando...' : 'Ativar Push'}
+            {pushLoading ? 'Ativando...' : '🔔 Push'}
           </button>
           <button
             onClick={() => signOut()}
-            className="text-sm font-medium text-gray-600 hover:text-gray-900 px-3 py-1.5 rounded-lg border border-gray-200"
+            className="text-xs font-medium text-[#c8cad3] hover:text-white px-3 py-1.5 rounded-lg bg-[#282a3a] border border-[#353849] transition-colors"
           >
             Sair
           </button>
         </div>
       </header>
 
-      {/* Tabs */}
-      <div className="max-w-3xl mx-auto px-4 mt-4">
-        <div className="flex border-b border-gray-200">
+      {/* Main Navigation Switcher (Encomendas / Lembretes) */}
+      <div className="max-w-3xl mx-auto px-4 pt-4">
+        <div className="flex bg-[#161822] p-1 rounded-xl border border-[#282a3a]">
+          <button
+            onClick={() => navigate('/pedidos')}
+            className="flex-1 py-2 rounded-lg text-sm font-semibold bg-indigo-600 text-white shadow-sm transition-all"
+          >
+            📦 Encomendas
+          </button>
+          <button
+            onClick={() => navigate('/lembretes')}
+            className="flex-1 py-2 rounded-lg text-sm font-semibold text-[#9ca0b0] hover:text-white transition-all"
+          >
+            📝 Lembretes ({orders.length > 0 ? '' : ''})
+          </button>
+        </div>
+
+        {/* Sub-tabs (Ativas / Arquivadas) */}
+        <div className="flex border-b border-[#282a3a] mt-4">
           <button
             onClick={() => {
               setActiveTab('ativas')
@@ -107,8 +124,8 @@ export default function OrderList() {
             }}
             className={`flex-1 py-3 text-center font-medium text-sm border-b-2 transition-colors ${
               activeTab === 'ativas'
-                ? 'border-blue-600 text-blue-600'
-                : 'border-transparent text-gray-500 hover:text-gray-700'
+                ? 'border-indigo-500 text-indigo-400 font-semibold'
+                : 'border-transparent text-[#9ca0b0] hover:text-[#c8cad3]'
             }`}
           >
             Ativas ({orders.filter((o) => o.status !== 'entregue').length})
@@ -120,8 +137,8 @@ export default function OrderList() {
             }}
             className={`flex-1 py-3 text-center font-medium text-sm border-b-2 transition-colors ${
               activeTab === 'arquivadas'
-                ? 'border-blue-600 text-blue-600'
-                : 'border-transparent text-gray-500 hover:text-gray-700'
+                ? 'border-indigo-500 text-indigo-400 font-semibold'
+                : 'border-transparent text-[#9ca0b0] hover:text-[#c8cad3]'
             }`}
           >
             Arquivadas ({orders.filter((o) => o.status === 'entregue').length})
@@ -135,7 +152,7 @@ export default function OrderList() {
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Buscar por título ou cliente..."
-            className="input-field bg-white"
+            className="input-field bg-[#161822] text-white border-[#282a3a] placeholder-[#6b6f80]"
           />
 
           {activeTab === 'ativas' && (
@@ -153,8 +170,8 @@ export default function OrderList() {
                     onClick={() => setStatusFilter(filter.key)}
                     className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-colors ${
                       statusFilter === filter.key
-                        ? 'bg-blue-600 text-white'
-                        : 'bg-white border border-gray-200 text-gray-700 hover:bg-gray-100'
+                        ? 'bg-indigo-600 text-white'
+                        : 'bg-[#161822] border border-[#282a3a] text-[#c8cad3] hover:bg-[#1e2030]'
                     }`}
                   >
                     {filter.label}
@@ -167,7 +184,7 @@ export default function OrderList() {
 
         {/* Error message */}
         {error && (
-          <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg text-sm text-red-600">
+          <div className="mt-4 p-3 bg-red-950/80 border border-red-800/60 rounded-lg text-sm text-red-200">
             {error}
           </div>
         )}
@@ -177,16 +194,16 @@ export default function OrderList() {
           {loading ? (
             <div className="space-y-3">
               {[1, 2, 3].map((n) => (
-                <div key={n} className="card h-28 skeleton bg-white" />
+                <div key={n} className="card h-28 skeleton bg-[#161822] border-[#282a3a]" />
               ))}
             </div>
           ) : filteredOrders.length === 0 ? (
-            <div className="text-center py-12 bg-white rounded-lg border border-gray-200 p-6 mt-4">
-              <p className="text-gray-500 text-base">Nenhuma encomenda encontrada.</p>
+            <div className="text-center py-12 bg-[#161822] rounded-xl border border-[#282a3a] p-6 mt-4">
+              <p className="text-[#9ca0b0] text-base">Nenhuma encomenda encontrada.</p>
               {activeTab === 'ativas' && (
                 <button
                   onClick={() => navigate('/pedidos/novo')}
-                  className="mt-4 btn-primary inline-flex items-center gap-2 text-sm"
+                  className="mt-4 btn-primary inline-flex items-center gap-2 text-sm bg-indigo-600 hover:bg-indigo-700"
                 >
                   Criar primeira encomenda
                 </button>
@@ -207,7 +224,7 @@ export default function OrderList() {
       {/* Floating Action Button (+) */}
       <button
         onClick={() => navigate('/pedidos/novo')}
-        className="fixed bottom-6 right-6 w-14 h-14 bg-blue-600 text-white rounded-full shadow-lg flex items-center justify-center text-3xl hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 transition-transform active:scale-95 z-20"
+        className="fixed bottom-6 right-6 w-14 h-14 bg-indigo-600 text-white rounded-full shadow-2xl flex items-center justify-center text-3xl hover:bg-indigo-700 focus:ring-4 focus:ring-indigo-500/30 transition-transform active:scale-95 z-20"
         title="Nova encomenda"
       >
         +

@@ -1,0 +1,17 @@
+---
+source_file: ".claude/skills/frontend-ui-engineering/SKILL.md"
+type: "document"
+community: "Frontend UI Engineering"
+location: "L36"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/Frontend_UI_Engineering
+---
+
+# Component Patterns
+
+## Connections
+- [[Component Architecture_1]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/Frontend_UI_Engineering

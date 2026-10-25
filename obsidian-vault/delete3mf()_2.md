@@ -1,0 +1,18 @@
+---
+source_file: "obsidian-vault/delete3mf()_1.md"
+type: "document"
+community: "_COMMUNITY_Community 3.md"
+location: "L12"
+tags:
+  - graphify/document
+  - graphify/EXTRACTED
+  - community/_COMMUNITY_Community_3md
+---
+
+# delete3mf()
+
+## Connections
+- [[Connections_340]] - `contains` [EXTRACTED]
+- [[delete3mf()_1_1]] - `contains` [EXTRACTED]
+
+#graphify/document #graphify/EXTRACTED #community/_COMMUNITY_Community_3md
