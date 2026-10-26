@@ -159,9 +159,7 @@ export default function BudgetPage() {
             </div>
           </div>
 
-        {/* Parâmetros Financeiros (Ocultos na Impressão) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 no-print">
-          <div className="bg-[var(--color-surface-800)] border border-[var(--color-surface-600)] p-5 rounded-2xl space-y-4 md:col-span-3">
+          <div className="bg-[var(--color-surface-800)] border border-[var(--color-surface-600)] p-5 rounded-2xl space-y-4 md:col-span-2">
             <h2 className="text-lg font-bold text-white flex items-center gap-2">
               <span>⚙️</span> Parâmetros Financeiros do Orçamento
             </h2>
@@ -222,30 +220,6 @@ export default function BudgetPage() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Cabeçalho de Impressão Exclusivo para PDF */}
-        <div className="hidden print:block bg-white text-black p-6 rounded-xl border border-gray-300 space-y-4">
-          <div className="flex justify-between items-start border-b border-gray-300 pb-4">
-            <div>
-              <h1 className="text-2xl font-black text-indigo-900">AXIOM 3D - Proposta Comercial</h1>
-              <p className="text-xs text-gray-600">Impressão 3D Profissional de Alta Precisão</p>
-            </div>
-            <div className="text-right text-xs text-gray-600">
-              <p>Data: {new Date().toLocaleDateString('pt-BR')}</p>
-              <p>Validade: 10 dias</p>
-            </div>
-          </div>
-          <div className="grid grid-cols-2 gap-4 text-sm">
-            <div>
-              <p><strong>Cliente:</strong> {clientName || 'Cliente'}</p>
-              {clientPhone && <p><strong>Telefone:</strong> {clientPhone}</p>}
-            </div>
-            <div>
-              {clientEmail && <p><strong>E-mail:</strong> {clientEmail}</p>}
-            </div>
-          </div>
-        </div>
         </div>
 
         {/* Tabela de Itens (Até 8 produtos) */}
