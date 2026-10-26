@@ -19,7 +19,7 @@ export default function GramsFields({ totalGrams, onTotalChange, colors }: Grams
   return (
     <div className="space-y-3">
       <div>
-        <label htmlFor="filament_grams_total" className="block text-sm font-medium text-gray-700 mb-1">
+        <label htmlFor="filament_grams_total" className="block text-sm font-medium text-[var(--color-surface-200)] mb-1">
           Gramas de filamento (total)
         </label>
         <div className="flex items-center gap-2">
@@ -33,20 +33,20 @@ export default function GramsFields({ totalGrams, onTotalChange, colors }: Grams
             placeholder="Ex: 125.5"
             className="input-field"
           />
-          <span className="text-sm font-medium text-gray-500">g</span>
+          <span className="text-sm font-medium text-[var(--color-surface-300)]">g</span>
         </div>
       </div>
 
       {hasColorGrams && (
-        <div className="p-3 bg-blue-50 border border-blue-100 rounded-lg flex items-center justify-between text-sm">
-          <span className="text-blue-900">
-            Soma por cor: <strong>{sumGrams.toFixed(1)}g</strong>
+        <div className="p-3 bg-[var(--color-surface-700)] border border-[var(--color-surface-600)] rounded-xl flex items-center justify-between text-sm">
+          <span className="text-[var(--color-surface-100)]">
+            Soma por cor: <strong className="text-white">{sumGrams.toFixed(1)}g</strong>
           </span>
           {isDifferent && (
             <button
               type="button"
               onClick={handleUseSum}
-              className="text-xs bg-blue-600 text-white px-2.5 py-1 rounded hover:bg-blue-700 transition-colors"
+              className="text-xs bg-indigo-600 text-white px-2.5 py-1 rounded-lg hover:bg-indigo-700 transition-colors font-medium"
             >
               Usar soma como total
             </button>

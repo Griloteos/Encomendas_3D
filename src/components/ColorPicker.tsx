@@ -47,17 +47,17 @@ export default function ColorPicker({ selectedColors, onChange }: ColorPickerPro
 
   return (
     <div className="space-y-4">
-      <label className="block text-sm font-medium text-gray-700">Cores usadas</label>
+      <label className="block text-sm font-medium text-[var(--color-surface-200)]">Cores usadas</label>
 
       {/* Selected color chips */}
       <div className="flex flex-wrap gap-2">
         {selectedColors.map((color, index) => (
           <div
             key={index}
-            className="flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-lg p-2 text-sm"
+            className="flex items-center gap-2 bg-[var(--color-surface-700)] border border-[var(--color-surface-600)] rounded-lg p-2 text-sm text-white"
           >
             <span
-              className="w-6 h-6 rounded-full border border-gray-300 shrink-0"
+              className="w-6 h-6 rounded-full border border-gray-600 shrink-0"
               style={{ backgroundColor: color.hex }}
             />
             <div className="flex flex-col">
@@ -66,9 +66,9 @@ export default function ColorPicker({ selectedColors, onChange }: ColorPickerPro
                 placeholder="Nome (opcional)"
                 value={color.name || ''}
                 onChange={(e) => updateColorField(index, 'name', e.target.value)}
-                className="text-xs border-b border-gray-300 bg-transparent outline-none pb-0.5 w-24"
+                className="text-xs border-b border-[var(--color-surface-500)] bg-transparent text-white outline-none pb-0.5 w-24 placeholder-[var(--color-surface-400)]"
               />
-              <span className="text-[10px] text-gray-500 font-mono">{color.hex}</span>
+              <span className="text-[10px] text-[var(--color-surface-300)] font-mono">{color.hex}</span>
             </div>
             <input
               type="number"
@@ -76,12 +76,12 @@ export default function ColorPicker({ selectedColors, onChange }: ColorPickerPro
               placeholder="g"
               value={color.grams ?? ''}
               onChange={(e) => updateColorField(index, 'grams', e.target.value)}
-              className="w-14 text-xs border border-gray-300 rounded px-1 py-0.5 bg-white"
+              className="w-14 text-xs border border-[var(--color-surface-500)] rounded px-1 py-0.5 bg-[var(--color-surface-800)] text-white"
             />
             <button
               type="button"
               onClick={() => removeColor(index)}
-              className="text-red-500 hover:text-red-700 font-bold px-1 text-sm"
+              className="text-red-400 hover:text-red-300 font-bold px-1 text-sm"
             >
               ×
             </button>
@@ -90,8 +90,8 @@ export default function ColorPicker({ selectedColors, onChange }: ColorPickerPro
       </div>
 
       {selectedColors.length < 8 && (
-        <div className="space-y-3 p-3 bg-gray-50 rounded-lg border border-gray-200">
-          <p className="text-xs font-medium text-gray-700">Adicionar cor da paleta:</p>
+        <div className="space-y-3 p-3 bg-[var(--color-surface-700)]/60 rounded-xl border border-[var(--color-surface-600)]">
+          <p className="text-xs font-medium text-[var(--color-surface-200)]">Adicionar cor da paleta:</p>
           <div className="grid grid-cols-6 gap-2 sm:grid-cols-9">
             {COLOR_PALETTE.map((c) => {
               const contrast = getContrastColor(c.hex)
@@ -100,7 +100,7 @@ export default function ColorPicker({ selectedColors, onChange }: ColorPickerPro
                   key={c.hex}
                   type="button"
                   onClick={() => addColor(c.hex, c.name)}
-                  className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-[10px] shadow-sm hover:scale-110 transition-transform"
+                  className="w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center text-[10px] shadow-sm hover:scale-110 transition-transform"
                   style={{ backgroundColor: c.hex, color: contrast }}
                   title={`${c.name} (${c.hex})`}
                 >

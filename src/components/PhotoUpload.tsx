@@ -64,11 +64,11 @@ export default function PhotoUpload({ orderId, photoPaths, onChange }: PhotoUplo
 
   return (
     <div className="space-y-3">
-      <label className="block text-sm font-medium text-gray-700">
+      <label className="block text-sm font-medium text-[var(--color-surface-200)]">
         Fotos do Projeto ({photoPaths.length}/2)
       </label>
 
-      {error && <p className="text-xs text-red-600">{error}</p>}
+      {error && <p className="text-xs text-red-400">{error}</p>}
 
       <div className="flex flex-wrap gap-3">
         {photoPaths.map((path) => (
@@ -76,9 +76,9 @@ export default function PhotoUpload({ orderId, photoPaths, onChange }: PhotoUplo
         ))}
 
         {photoPaths.length < 2 && (
-          <label className="w-24 h-24 border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center cursor-pointer hover:border-blue-500 hover:bg-blue-50 transition-colors">
-            <span className="text-2xl text-gray-400">+</span>
-            <span className="text-[10px] text-gray-500 mt-1">
+          <label className="w-24 h-24 border-2 border-dashed border-[var(--color-surface-500)] rounded-xl flex flex-col items-center justify-center cursor-pointer hover:border-indigo-500 hover:bg-[var(--color-surface-700)] transition-colors">
+            <span className="text-2xl text-[var(--color-surface-300)]">+</span>
+            <span className="text-[10px] text-[var(--color-surface-300)] mt-1">
               {uploading ? 'Enviando...' : 'Adicionar'}
             </span>
             <input
@@ -103,16 +103,16 @@ function PhotoThumb({ path, onRemove }: { path: string; onRemove: () => void }) 
   })
 
   return (
-    <div className="relative w-24 h-24 rounded-lg border border-gray-200 overflow-hidden bg-gray-100">
+    <div className="relative w-24 h-24 rounded-xl border border-[var(--color-surface-600)] overflow-hidden bg-[var(--color-surface-700)]">
       {url ? (
         <img src={url} alt="Projeto 3D" className="w-full h-full object-cover" />
       ) : (
-        <div className="w-full h-full flex items-center justify-center text-xs text-gray-400">Carregando...</div>
+        <div className="w-full h-full flex items-center justify-center text-xs text-[var(--color-surface-400)]">Carregando...</div>
       )}
       <button
         type="button"
         onClick={onRemove}
-        className="absolute top-1 right-1 bg-red-600 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs hover:bg-red-700 shadow"
+        className="absolute top-1 right-1 bg-red-600/80 hover:bg-red-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold transition-colors"
         title="Remover foto"
       >
         ×

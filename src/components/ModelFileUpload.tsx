@@ -118,12 +118,12 @@ export default function ModelFileUpload({
   return (
     <div className="space-y-3">
       <div className="flex items-center justify-between">
-        <label className="block text-sm font-medium text-gray-700">Arquivo 3MF do Projeto</label>
+        <label className="block text-sm font-medium text-[var(--color-surface-200)]">Arquivo 3MF do Projeto</label>
         {modelPath && (
           <select
             value={slicer}
             onChange={(e) => handleSlicerChange(e.target.value)}
-            className="text-xs border border-gray-300 rounded px-2 py-1 bg-white"
+            className="text-xs border border-[var(--color-surface-500)] rounded-lg px-2 py-1 bg-[var(--color-surface-700)] text-white"
           >
             <option value="orcaslicer">OrcaSlicer</option>
             <option value="bambustudio">Bambu Studio</option>
@@ -132,25 +132,25 @@ export default function ModelFileUpload({
         )}
       </div>
 
-      {error && <p className="text-xs text-red-600">{error}</p>}
+      {error && <p className="text-xs text-red-400">{error}</p>}
 
       {modelPath ? (
-        <div className="p-3 bg-gray-50 border border-gray-200 rounded-lg flex flex-col gap-3">
+        <div className="p-3 bg-[var(--color-surface-700)] border border-[var(--color-surface-600)] rounded-xl flex flex-col gap-3">
           <div className="flex items-center justify-between">
             <div className="min-w-0">
-              <p className="text-sm font-medium text-gray-800 truncate">{modelName}</p>
-              {modelSize && <p className="text-xs text-gray-500">{formatFileSize(modelSize)}</p>}
+              <p className="text-sm font-medium text-white truncate">{modelName}</p>
+              {modelSize && <p className="text-xs text-[var(--color-surface-300)]">{formatFileSize(modelSize)}</p>}
             </div>
             <button
               type="button"
               onClick={handleRemove}
-              className="text-red-600 hover:text-red-800 text-xs font-medium px-2 py-1"
+              className="text-red-400 hover:text-red-300 text-xs font-semibold px-2 py-1 rounded bg-red-950/40 border border-red-900/50"
             >
               Remover
             </button>
           </div>
 
-          <div className="flex items-center gap-2 pt-2 border-t border-gray-200">
+          <div className="flex items-center gap-2 pt-2 border-t border-[var(--color-surface-600)]">
             <button
               type="button"
               onClick={handleOpenInSlicer}
@@ -168,11 +168,11 @@ export default function ModelFileUpload({
           </div>
         </div>
       ) : (
-        <label className="border-2 border-dashed border-gray-300 rounded-lg p-4 flex flex-col items-center justify-center cursor-pointer hover:border-blue-500 hover:bg-blue-50 transition-colors">
-          <span className="text-sm font-medium text-gray-700">
+        <label className="border-2 border-dashed border-[var(--color-surface-500)] rounded-xl p-4 flex flex-col items-center justify-center cursor-pointer hover:border-indigo-500 hover:bg-[var(--color-surface-700)] transition-colors">
+          <span className="text-sm font-medium text-[var(--color-surface-200)]">
             {uploading ? `Enviando... ${progress}%` : 'Enviar arquivo .3mf'}
           </span>
-          <span className="text-xs text-gray-500 mt-1">Selecione o arquivo do modelo 3D</span>
+          <span className="text-xs text-[var(--color-surface-400)] mt-1">Selecione o arquivo do modelo 3D</span>
           <input
             type="file"
             accept=".3mf,application/vnd.ms-package.3dmanufacturing-3dmodel+xml"

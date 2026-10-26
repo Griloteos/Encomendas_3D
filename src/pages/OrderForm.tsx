@@ -135,17 +135,17 @@ export default function OrderForm() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 pb-24">
+    <div className="min-h-screen bg-[var(--color-surface-900)] text-[var(--color-surface-100)] pb-24">
       {/* Header */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-10 px-4 py-3 flex items-center justify-between">
+      <header className="bg-[var(--color-surface-800)] border-b border-[var(--color-surface-600)] sticky top-0 z-10 px-4 py-3 flex items-center justify-between shadow-sm">
         <div className="flex items-center gap-3">
           <button
             onClick={() => navigate(-1)}
-            className="text-gray-600 hover:text-gray-900 font-medium text-sm"
+            className="text-[var(--color-surface-300)] hover:text-white font-medium text-sm transition-colors"
           >
             ← Voltar
           </button>
-          <h1 className="text-lg font-bold text-gray-800 m-0">
+          <h1 className="text-lg font-bold text-white m-0">
             {isEditing ? 'Editar Encomenda' : 'Nova Encomenda'}
           </h1>
         </div>
@@ -161,7 +161,7 @@ export default function OrderForm() {
 
           {/* Title */}
           <div>
-            <label htmlFor="title" className="block text-sm font-medium text-gray-700 mb-1">
+            <label htmlFor="title" className="block text-sm font-medium text-[var(--color-surface-200)] mb-1">
               Título da Encomenda * (máx. 120 caracteres)
             </label>
             <input
@@ -179,7 +179,7 @@ export default function OrderForm() {
           {/* Prices */}
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label htmlFor="cost_price" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="cost_price" className="block text-sm font-medium text-[var(--color-surface-200)] mb-1">
                 Valor de Custo (R$) *
               </label>
               <input
@@ -193,7 +193,7 @@ export default function OrderForm() {
               />
             </div>
             <div>
-              <label htmlFor="sale_price" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="sale_price" className="block text-sm font-medium text-[var(--color-surface-200)] mb-1">
                 Valor de Venda (R$) *
               </label>
               <input
@@ -219,7 +219,7 @@ export default function OrderForm() {
           />
 
           {/* Photos & 3MF (if editing or temporary order id for new) */}
-          <div className="space-y-4 pt-4 border-t border-gray-200">
+          <div className="space-y-4 pt-4 border-t border-[var(--color-surface-600)]">
             <PhotoUpload
               orderId={id || 'temp'}
               photoPaths={photoPaths}
@@ -242,7 +242,7 @@ export default function OrderForm() {
           {/* Delivery Date & Status */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
-              <label htmlFor="delivery_date" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="delivery_date" className="block text-sm font-medium text-[var(--color-surface-200)] mb-1">
                 Data de Entrega *
               </label>
               <input
@@ -255,14 +255,14 @@ export default function OrderForm() {
               />
             </div>
             <div>
-              <label htmlFor="status" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="status" className="block text-sm font-medium text-[var(--color-surface-200)] mb-1">
                 Status *
               </label>
               <select
                 id="status"
                 value={status}
                 onChange={(e) => setStatus(e.target.value as OrderStatus)}
-                className="input-field bg-white"
+                className="input-field bg-[var(--color-surface-700)] text-white"
               >
                 <option value="pendente">Pendente</option>
                 <option value="imprimindo">Imprimindo</option>
@@ -273,10 +273,10 @@ export default function OrderForm() {
           </div>
 
           {/* Customer info */}
-          <div className="space-y-4 pt-4 border-t border-gray-200">
-            <h3 className="font-semibold text-gray-800 text-sm">Dados do Cliente (Opcional)</h3>
+          <div className="space-y-4 pt-4 border-t border-[var(--color-surface-600)]">
+            <h3 className="font-semibold text-white text-sm">Dados do Cliente (Opcional)</h3>
             <div>
-              <label htmlFor="customer_name" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="customer_name" className="block text-sm font-medium text-[var(--color-surface-200)] mb-1">
                 Nome do Cliente
               </label>
               <input
@@ -289,7 +289,7 @@ export default function OrderForm() {
               />
             </div>
             <div>
-              <label htmlFor="customer_whatsapp" className="block text-sm font-medium text-gray-700 mb-1">
+              <label htmlFor="customer_whatsapp" className="block text-sm font-medium text-[var(--color-surface-200)] mb-1">
                 WhatsApp
               </label>
               <input

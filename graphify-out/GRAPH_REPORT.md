@@ -1,17 +1,17 @@
 # Graph Report - encomendas-3d  (2026-10-25)
 
 ## Corpus Check
-- 5409 files · ~496,230 words
+- 5448 files · ~524,234 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 30 file(s) not represented in the graph (top: .toml 18, (none) 6, .css 2)
+- Unclassified: 34 file(s) not represented in the graph (top: .toml 18, (none) 10, .css 2)
 
 ## Summary
-- 18872 nodes · 24456 edges · 1703 communities (1085 shown, 618 thin omitted)
+- 19312 nodes · 24908 edges · 1724 communities (1114 shown, 610 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 32 edges (avg confidence: 0.86)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `85f63288`
+- Built from commit: `91c3aefa`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -33,17 +33,17 @@
 - validate-reference-links-test.js
 - PhotoUpload.tsx
 - _COMMUNITY__COMMUNITY_Community 13.md
-- supabase
+- Web Quality Skills
 - simplify-ignore.sh
-- OrderForm.tsx_2.md
-- ModelFileUpload.tsx
+- Best practices
+- SEO optimization
 - _COMMUNITY_OrderForm.tsx.md
 - apply_entries
 - simplify-ignore-test.sh
 - benchmark.js
 - marketplace.json
 - sdd-cache-test.sh
-- package.json_2.md
+- _COMMUNITY_storage.ts.md
 - test-driven-development/package.json
 - _COMMUNITY__COMMUNITY_Community 16.md
 - ci-cd-and-automation/package.json
@@ -73,7 +73,7 @@
 - _COMMUNITY_simplify-ignore.sh.md
 - 🔔 Sistema de Notificações e Relatórios - Documentação
 - skill-lint-test.js.md
-- PhotoUpload.tsx
+- _COMMUNITY_PhotoUpload.tsx.md
 - validate-reference-links.js.md
 - _COMMUNITY_simplify-ignore-test.sh.md
 - _COMMUNITY_format.js.md
@@ -84,7 +84,7 @@
 - Code Review and Quality
 - Test-Driven Development
 - 🧩 Snippets Úteis - Graphify & Obsidian
-- Connections_114.md
+- _COMMUNITY_webhook.test.js_1.md
 - _COMMUNITY_Community 28.md
 - Context Engineering
 - Context Engineering
@@ -96,7 +96,7 @@
 - Optimization Patterns
 - Git Workflow and Versioning
 - Optimization Patterns
-- 🐛 Resolução: Problema ao Adicionar Lembretes
+- 3. Possíveis Causas Identificadas
 - 🗺️ Roadmap - Encomendas 3D
 - sdd-cache hook
 - Shipping and Launch
@@ -135,9 +135,9 @@
 - _COMMUNITY__COMMUNITY_Community 33.md
 - Skill Anatomy
 - Agent Skills
-- Community 36.md
+- _COMMUNITY__COMMUNITY_Community 36.md
 - _COMMUNITY__COMMUNITY_Community 14.md
-- _COMMUNITY__COMMUNITY_Community 15.md
+- Performance optimization
 - _COMMUNITY_Community 2.md
 - Using agent-skills with GitHub Copilot
 - Getting Started with agent-skills
@@ -173,7 +173,7 @@
 - Using Agent Skills
 - Using Agent Skills
 - _COMMUNITY_config-parser.test.js_1.md
-- Connections_107.md
+- _COMMUNITY_reports.test.js.md
 - _COMMUNITY_webhook.test.js.md
 - _COMMUNITY_split.test.js_1.md
 - run-evals-test.js.md
@@ -201,9 +201,9 @@
 - _COMMUNITY_Community 0.md
 - Refinement & Evaluation Criteria
 - Refinement & Evaluation Criteria
-- Connections_165.md
-- Connections_170.md
-- _COMMUNITY_Community 15.md
+- _COMMUNITY_ref_node_test_1.md
+- _COMMUNITY_ref_node_assert_1.md
+- _COMMUNITY__COMMUNITY_Community 15.md
 - validate-commands.js_2.md
 - _COMMUNITY_subscribeUserToPush()_1.md
 - _COMMUNITY_OrderList.tsx.md
@@ -215,7 +215,7 @@
 - Approach
 - Developer Onboarding
 - 🏠 Sistema de Encomendas 3D - Início
-- _COMMUNITY__COMMUNITY_Community 4.md
+- _COMMUNITY_Community 4.md
 - _COMMUNITY_Community 44.md
 - _COMMUNITY_Community 45.md
 - _COMMUNITY_Community 50.md
@@ -239,7 +239,7 @@
 - _COMMUNITY_skill-lint.js_1.md
 - _COMMUNITY__COMMUNITY_Community 0.md
 - Using agent-skills with GitHub Copilot CLI.md
-- _COMMUNITY_Community 1.md
+- _COMMUNITY__COMMUNITY_Community 1.md
 - split.test.js
 - _COMMUNITY_compilerOptions.md
 - app.test.js_2.md
@@ -252,13 +252,13 @@
 - _COMMUNITY_Contributing to Agent Skills.md
 - split-payment
 - Community 0
-- _COMMUNITY_floor-guard-reference-test.js_1.md
+- _COMMUNITY_Community 10.md
 - Community 12
 - Community 13
 - _COMMUNITY_storage.ts_1.md
-- Community 1.md
+- _COMMUNITY_Community 1.md
 - API and Interface Design.md
-- Community 21
+- budgetEngine.ts
 - Community 2
 - _COMMUNITY_Community 3.md
 - Community 4
@@ -274,7 +274,7 @@
 - _COMMUNITY_runBehavioral().md
 - _COMMUNITY_allowImportingTsExtensions.md
 - dot-claudeskillsidea-refinescriptsidea-refine.sh.md
-- Connections_157.md
+- _COMMUNITY_slug.test.js.md
 - _COMMUNITY_erasableSyntaxOnly.md
 - _COMMUNITY_Using Agent Skills_1.md
 - _COMMUNITY_Using agent-skills with Gemini CLI.md
@@ -318,7 +318,7 @@
 - _COMMUNITY_target.md
 - { total }
 - _COMMUNITY_compilerOptions_1.md
-- _COMMUNITY_Community 4.md
+- _COMMUNITY_loadCommands().md
 - _COMMUNITY_types.md
 - { visibleReports }
 - service-brief.md
@@ -360,13 +360,13 @@
 - _COMMUNITY_Advanced per-agent configuration.md
 - agent-skills.md
 - _COMMUNITY_simplify-ignore hook.md
-- _COMMUNITY__COMMUNITY_Community 3.md
+- storage.js_1.md
 - Hardening Controls.md
 - Hardening Controls_1.md
 - validate-artifact-paths.js.md
 - _COMMUNITY_lintSkill().md
 - _COMMUNITY_Using agent-skills with Windsurf.md
-- Connections_256.md
+- _COMMUNITY_total().md
 - _COMMUNITY_ref_node_assert.md
 - OWASP Top 10 Prevention Patterns.md
 - OWASP Top 10 Prevention Patterns_1.md
@@ -375,8 +375,8 @@
 - Security and Hardening.md
 - Security and Hardening_1.md
 - _COMMUNITY_include_1.md
-- Connections_267.md
-- devDependencies_2.md
+- _COMMUNITY_paginate().md
+- _COMMUNITY_package.json_1.md
 - _COMMUNITY_Worked example Agent Teams for competing-hypothesis debugging.md
 - 📝 Changelog - Sistema de Notificações e Relatórios
 - _COMMUNITY_Shipping and Launch.md
@@ -411,7 +411,7 @@
 - The Five Principles.md
 - The Five Principles_1.md
 - Claude Code compatibility.md
-- ColorPicker.tsx
+- web-quality/AGENTS.md
 - _COMMUNITY_validate-commands-test.js_1.md
 - _COMMUNITY_Community 27.md
 - Writing Good Tests.md
@@ -425,11 +425,11 @@
 - _COMMUNITY_Documentation and ADRs.md
 - _COMMUNITY_Documentation and ADRs_1.md
 - _COMMUNITY_OpenCode Setup.md
-- _COMMUNITY_package.json_1.md
+- Systematic Debugging
 - commandsbuild.md
 - _COMMUNITY_Context Engineering.md
 - _COMMUNITY_Deprecation and Migration_1.md
-- Community 15.md
+- Web quality audit
 - dbg()_4.md
 - _COMMUNITY_webperf.md
 - 🚀 Como Usar.md
@@ -444,14 +444,14 @@
 - Accessibility (WCAG 2.1 AA).md
 - Accessibility (WCAG 2.1 AA)_1.md
 - Migration Patterns.md
-- Migration Patterns_1.md
+- _COMMUNITY_floor-guard-reference-test.js_1.md
 - Context Engineering.md
 - Test-Driven Development.md
 - _COMMUNITY_allowImportingTsExtensions_1.md
 - Context Engineering_1.md
 - 🔍 Comandos Graphify Essenciais.md
 - _COMMUNITY_Community 23.md
-- scripts_6.md
+- LCP optimization reference
 - Caching Strategies.md
 - Code Review and Quality_1.md
 - Code Review and Quality.md
@@ -459,17 +459,17 @@
 - Test-Driven Development_1.md
 - Performance Optimization_1.md
 - Community 0.md
-- Community 11.md
+- Core Web Vitals optimization
 - Community 12.md
 - Community 13.md
 - _COMMUNITY_Process.md
 - Community 19.md
 - Community 2.md
 - _COMMUNITY_Community 20.md
-- Community 21.md
+- _COMMUNITY_Community 21.md
 - Community 28.md
 - Community 4.md
-- _COMMUNITY_Community 36.md
+- auth.tsx.md
 - Community 7.md
 - _COMMUNITY_Community 19.md
 - _COMMUNITY_erasableSyntaxOnly_1.md
@@ -509,7 +509,7 @@
 - The Process_7.md
 - The Simplification Process.md
 - The Triage Checklist.md
-- vite.config.ts_2.md
+- Community 17.md
 - _COMMUNITY_🗺️ Roadmap - Encomendas 3D.md
 - _COMMUNITY_Accessibility Checklist.md
 - _COMMUNITY_Path A  Greenfield full lifecycle from day one.md
@@ -551,7 +551,7 @@
 - 🧪 Como Testar.md
 - Floor guard reference implementation.md
 - Browser Testing with DevTools_2.md
-- Deprecation and Migration_1.md
+- getOrderById()_2.md
 - Documentation and ADRs.md
 - Incremental Implementation.md
 - All 25 Skills.md
@@ -575,7 +575,7 @@
 - Error-Specific Patterns.md
 - CICD and Automation.md
 - CICD and Automation_1.md
-- Core Principles_5.md
+- Order
 - Code Simplification_1.md
 - How to decide what to use.md
 - isDarkColor()_1.md
@@ -592,7 +592,7 @@
 - Confusion Management.md
 - Confusion Management_1.md
 - Database.md
-- storage.js_1.md
+- createOrder()_1_1.md
 - file_id()_2.md
 - format.js_1.md
 - unittest.md
@@ -650,7 +650,7 @@
 - The Process_1.md
 - The Process_2.md
 - devDependencies
-- { afterEach, test }_4.md
+- NotificationService.ts
 - _COMMUNITY_Git Workflow and Versioning.md
 - agent-skills/skills/idea-refine/scripts/idea-refine.sh
 - _COMMUNITY_Performance Checklist.md
@@ -697,7 +697,7 @@
 - How It Works_3.md
 - Accessibility Checklist.md
 - delete3mf()_3.md
-- Adoption Guide New Projects vs. Established Codebases.md
+- Find Skills
 - TypeScript Interface Patterns.md
 - Agent Skills.md
 - Idea Refine.md
@@ -706,8 +706,8 @@
 - API Documentation_1.md
 - 📚 Referências e Links.md
 - apply_entries()_1.md
-- assert
-- _COMMUNITY__COMMUNITY_Community 36.md
+- web-quality/CLAUDE.md
+- Accessibility (a11y)
 - assert_eq()_1_1.md
 - 🧩 Snippets Úteis - Graphify & Obsidian.md
 - Setting Up Chrome DevTools MCP.md
@@ -715,7 +715,7 @@
 - block_hash()_2.md
 - Branching Strategy.md
 - Branching Strategy_1.md
-- Path B  Brownfield incremental, verification-first.md
+- Security reference
 - CACHE_1.md
 - _COMMUNITY_Using agent-skills with GitHub Copilot CLI.md
 - Console Analysis Patterns.md
@@ -736,10 +736,10 @@
 - Component Architecture.md
 - Component Architecture_1.md
 - Configuration & Customization.md
-- createReminder()_2.md
-- delete3mf()_1_1.md
+- core-web-vitals/SKILL.md
+- _COMMUNITY__COMMUNITY_Community 3.md
 - deletePhoto()_1_1.md
-- deleteReminder()_2.md
+- floor-guard-reference-test.js_1.md
 - getOrderById()_1_1.md
 - How agent-skills compares.md
 - getPhotoUrl()_2.md
@@ -749,16 +749,16 @@
 - getSignedPhotoUrl()_1_1.md
 - updateOrder()_1_1.md
 - updateReminder()_2.md
-- upload3mf()_1_1.md
-- fs_19.md
-- makeSandbox()_5.md
-- os_9.md
-- path_19.md
-- run()_6.md
-- sandboxes_4.md
-- SKILL_LINT_2.md
-- { spawnSync }_5.md
-- VALIDATOR_4.md
+- DeadlineInfo_1.md
+- WCAG 2.2 Quick Reference
+- Performance measurement workflow
+- budgetEngine.js
+- Accessibility Code Patterns
+- Operable
+- Cumulative Layout Shift (CLS)
+- Interaction to Next Paint (INP)
+- { after, before, test }_1.md
+- assert_9_1.md
 - description_2.md
 - license_2.md
 - author.md
@@ -770,12 +770,12 @@
 - @typesreact_1.md
 - deleteOrder()_1_1.md
 - version_1.md
-- keywords.md
+- auth.tsx_1.md
 - @typesnode_1.md
 - handleSlicerChange()_1.md
-- preview.md
-- path_1_1.md
-- PhotoUploadProps_1.md
+- cases_1.md
+- OrderStatus_1.md
+- getOrders()_2.md
 - plugins_1.md
 - Recommended Configuration.md
 - Lifecycle Workflows.md
@@ -864,7 +864,7 @@
 - agent-skillsskillsperformance-optimizationSKILL.md
 - agent-skillsskillssecurity-and-hardeningSKILL.md
 - agent-skillsskillssource-driven-developmentSKILL.md
-- dependencies
+- name_4_1.md
 - compilerOptions_3.md
 - Connections_292.md
 - apply_entries()_2.md
@@ -903,14 +903,14 @@
 - tdd-stays-quiet-on-debug/graders/not-fired.md
 - tdd-stays-quiet-on-debug/prompt.md
 - compilerOptions_4.md
-- Connections_152.md
+- type.md
 - Connections_100.md
 - Connections_108.md
-- Connections_158.md
+- editConstraints()_1.md
 - Connections_115.md
-- Connections_160.md
+- fs_4_1.md
 - Connections_137.md
-- Connections_140.md
+- os_1_1.md
 - Connections_146.md
 - Connections_207.md
 - Connections_175.md
@@ -937,10 +937,10 @@
 - Connections_370.md
 - private.md
 - Connections_383.md
-- Connections
-- Connections
-- Connections
-- Connections
+- path_4_1.md
+- REFERENCE_1.md
+- runGuard()_1.md
+- sandboxes_5.md
 - scripts.md
 - Connections_396.md
 - test_3.md
@@ -1051,17 +1051,17 @@
 - Code Simplification
 - _COMMUNITY_Community 12.md
 - _COMMUNITY_Community 13.md
-- _COMMUNITY_Community 14.md
-- _COMMUNITY_Community 15.md
+- { spawnSync }_6.md
+- main.tsx.md
 - ModelFileUpload()_2.md
 - _COMMUNITY_Community 19.md
 - _COMMUNITY_Community 28.md
-- _COMMUNITY_Community 30.md
+- grilling/SKILL.md
 - upload3mf()_4.md
 - _COMMUNITY_Community 36.md
 - _COMMUNITY_Community 37.md
-- _COMMUNITY_Community 3.md
-- dev_1.md
+- Common ARIA patterns
+- Understandable
 - _COMMUNITY_Community 5.md
 - _COMMUNITY_Community 6.md
 - _COMMUNITY_Community 7.md
@@ -1073,8 +1073,8 @@
 - Deprecation and Migration
 - Documentation and ADRs
 - Doubt-Driven Development
-- Encomendas 3D - PWA para Android + Computador
-- lint_2.md
+- Structured data reference
+- 🐛 Resolução: Problema ao Adicionar Lembretes
 - Frontend UI Engineering
 - Getting Started with agent-skills
 - Git Workflow and Versioning
@@ -1085,17 +1085,17 @@
 - lintSkillContent().md
 - loadCommands().md
 - NotificationService.js
-- NotificationService.ts.md
+- NotificationService.ts
 - OpenCode Setup
 - Optimization Patterns
-- OrderDetail.tsx
+- _COMMUNITY_OrderDetail.tsx.md
 - OrderForm.tsx
-- scripts_3.md
-- package.json
-- Path A | Greenfield: full lifecycle from day one
+- Ideias Estratégicas de Produtividade para a Oficina 3D
+- Runtime performance
+- On-page SEO
 - Performance Checklist
 - Planning and Task Breakdown
-- deletePhoto()_4.md
+- 🎯 Ideias de Notificação (Propostas)
 - 🐛 Resolução: Problema ao Adicionar Lembretes
 - 🗺️ Roadmap - Encomendas 3D
 - runDeterministic().md
@@ -1107,7 +1107,7 @@
 - storage.js
 - storage.ts.md
 - storage.ts
-- getSignedPhotoUrl()_4.md
+- Connections_464.md
 - Test-Driven Development
 - Using Agent Skills
 - Using agent-skills with Antigravity CLI (agy)
@@ -1180,7 +1180,7 @@
 - Integração Graphify + Obsidian
 - Process
 - Compulsory vs Advisory Deprecation.md
-- Compulsory vs Advisory Deprecation_1.md
+- AlertsBannerProps_2.md
 - Context Efficiency.md
 - Contributing_1.md
 - Core Process.md
@@ -1188,7 +1188,7 @@
 - createReminder().md
 - Cross-Skill References.md
 - Data Protection.md
-- Day 0  Define before you build.md
+- commitFile()_2.md
 - Dead Code Hygiene.md
 - Dead Code Hygiene_1.md
 - Define - Clarify what to build.md
@@ -1198,7 +1198,7 @@
 - deleteReminder().md
 - Dependency Discipline.md
 - Dependency Discipline_1.md
-- description_6.md
+- Connections_103.md
 - Discover the Stack First.md
 - Documentation for Agents.md
 - dot-claudeskillsci-cd-and-automationSKILL.md
@@ -1231,7 +1231,7 @@
 - File Location.md
 - Fonts.md
 - Forms.md
-- From the start, treat these as always-on.md
+- Connections_11.md
 - getOrderById().md
 - getOrders().md
 - getReminderById().md
@@ -1258,18 +1258,18 @@
 - jsx_2.md
 - Key Assumptions to Validate.md
 - Keyboard Navigation.md
-- keywords_2.md
+- Connections_118.md
 - Known limitations_1.md
 - Level 3 Relevant Source Files.md
 - Level 4 Error Output_1.md
 - lib_3.md
 - lib_4.md
-- license_4.md
+- Connections_151.md
 - Lifecycle Workflows and Command Compatibility.md
 - Loading Constraints_1.md
 - Loading Constraints_2.md
 - Loading Constraints_3.md
-- main_2.md
+- createOrder()_3.md
 - MCP Integrations.md
 - MCP Integrations_1.md
 - Mental model.md
@@ -1320,20 +1320,20 @@
 - Overview_47.md
 - Overview_49.md
 - Overview_5.md
-- Overview_50.md
+- deleteOrder()_3.md
 - Overview_51.md
 - Overview_6.md
 - Overview_8.md
 - Overview_9.md
 - OWASP Top 10 for LLMs Quick Reference.md
 - OWASP Top 10 Quick Reference.md
-- oxlint_5.md
+- formatDateShort()_3.md
 - Parallelization Opportunities.md
 - Performance_1.md
 - Personal data and privacy.md
-- Phase 2  Tests before change.md
-- Phase 3  New work runs the full lifecycle.md
-- Phase 4  Pay down, deprecate, observe.md
+- formatWhatsappForDisplay()_3.md
+- handleSubmit()_3.md
+- loadOrder()_3.md
 - Plan - Break it down.md
 - Plan Document Template.md
 - Plan Document Template_1.md
@@ -1368,7 +1368,7 @@
 - Red Flags_43.md
 - Red Flags_44.md
 - Red Flags_45.md
-- Red Flags_48.md
+- normalizeWhatsapp()_3.md
 - Red Flags_49.md
 - Red Flags_5.md
 - Red Flags_7.md
@@ -1440,7 +1440,7 @@
 - Supporting Files.md
 - Table of Contents.md
 - Table of Contents_1.md
-- tailwindcss_5.md
+- OrderForm()_2.md
 - target_3.md
 - target_4.md
 - Task Sizing Guidelines_1.md
@@ -1449,7 +1449,7 @@
 - The 95% Confidence Stop.md
 - The 95% Confidence Stop_1.md
 - The Deprecation Decision.md
-- The Deprecation Decision_1.md
+- parseGrams()_3.md
 - The Increment Cycle.md
 - The Prove-It Pattern (Bug Fixes)_1.md
 - The Quality Gate Pipeline.md
@@ -1461,14 +1461,14 @@
 - The Stop-the-Line Rule_1.md
 - Threat Modeling (Start Here).md
 - tsBuildInfoFile_4.md
-- type_2.md
+- statusColors_2.md
 - types_3.md
 - types_4.md
-- typescript_4.md
-- typescript_5.md
-- @typesnode_5.md
-- @typesreact_5.md
-- @typesreact-dom_4.md
+- git()_2.md
+- Connections_467.md
+- DeadlineTagProps_2.md
+- Order_2.md
+- OrderCardProps_2.md
 - Unbounded Data Fetching.md
 - Unbounded Data Fetching_1.md
 - Unnecessary Re-renders (React).md
@@ -1501,17 +1501,17 @@
 - Verification_43.md
 - Verification_45.md
 - Verification_46.md
-- Verification_47.md
+- Connections_506.md
 - Verification_5.md
 - Verification_6.md
 - Verification_7.md
 - Verification_9.md
 - Verification & Validation.md
-- version_3.md
+- Connections_76.md
 - Visual.md
 - 📊 Visão Geral.md
-- vite-plugin-pwa_4.md
-- @vitejsplugin-react_4.md
+- @supabase/supabase-js
+- 2.0.0
 - When to Use.md
 - When to Use_1.md
 - When to Use_12.md
@@ -1554,13 +1554,13 @@
 - Writing Test Plans for Complex UI Bugs.md
 - Writing Test Plans for Complex UI Bugs_1.md
 - Zombie Code.md
-- Zombie Code_1.md
+- Audit checklist
 - addColor().md
 - addColorStop().md
 - addColorStop
 - agent-skills/skills/using-agent-skills/SKILL.md
 - `agents/` directory
-- handleFileChange()_4.md
+- analyze.sh
 - Checklist (new project)
 - Color.md
 - COLOR_PALETTE.md
@@ -1570,19 +1570,19 @@
 - ColorPickerProps.md
 - _COMMUNITY_Community 33.md
 - _COMMUNITY_Community 35.md
-- handleRemove()_4.md
+- ✅ Checklist de Diagnóstico
 - _COMMUNITY_Community 7.md
 - Composition
 - Connections
 - Connections
-- PhotoThumb()_2.md
-- uploadPhoto()_4.md
+- 📋 Instruções para o Usuário
+- 📐 Sistema de Orçamento e Precificação (Axiom 3D)
 - obsidian-vault/copilot-cli-setup.md
 - Connections
 - Connections
 - Context tips
 - Cost expectation
-- obsidian-vault/skill-impact.md
+- agent-skills/README.md
 - .claude/skills/observability-and-instrumentation/SKILL.md
 - extract_header
 - extract_header().md
@@ -1591,13 +1591,13 @@
 - Using agent-skills with GitHub Copilot.md
 - API and Interface Design
 - GramsFieldsProps.md
-- Community 10
-- Community 1
+- Community 14
+- _COMMUNITY_Community 16.md
 - isValidHex()_1.md
 - Lifecycle Sequence
 - Live Query (requires Dataview plugin)
-- _COMMUNITY_Community 1.md
-- _COMMUNITY_Community 40.md
+- _COMMUNITY_Community 17.md
+- _COMMUNITY_Community 41.md
 - Members
 - Metric-Honesty Rule
 - normalizeHex()_1.md
@@ -1619,7 +1619,7 @@
 - Severity Classification
 - Skill Discovery
 - Skill Rules
-- _COMMUNITY_Community 42.md
+- _COMMUNITY_Community 4.md
 - The scenario
 - Tooling
 - Troubleshooting
@@ -1633,71 +1633,92 @@
 - When to Use
 - Why this is *not* a `/ship` job
 - How agent-skills compares
-- ModelFileUpload.tsx
-- paginate().md
+- floor-guard-reference-test.js.md
+- Common issues by impact
 - Process
-- ref_node_assert.md
-- ref_node_test.md
-- reports.test.js.md
+- ✨ Novas Funcionalidades
+- 📈 Próximos Passos Sugeridos
+- Testing checklist
 - run-evals.js
 - skill-lint-test.js
-- slug.test.js.md
-- total().md
+- obsidian-vault/accessibility-checklist.md
+- obsidian-vault/definition-of-done.md
 - Using agent-skills with GitHub Copilot CLI
-- webhook.test.js.md
+- obsidian-vault/observability-checklist.md
 - 1. Define working before instrumenting.md
 - 2. Consistent Error Semantics.md
 - 2. Pick the right signal for each question.md
 - 4. Metrics.md
 - 6. Honouring an Idempotency Key.md
 - Agent Personas (.agent.md).md
-- app.js_1.md
+- obsidian-vault/performance-checklist.md
 - At a glance.md
 - Combining them.md
 - Common Rationalizations_39.md
 - Hyrum's Law.md
 - Install.md
-- pagination.js_1.md
-- reports.js.md
-- slug.js_1.md
+- AlertsBanner().md
+- AlertsBanner
+- AlertsBanner.tsx.md
 - Sources.md
 - The shared frontier (true of all three).md
 - Then weight what you actually care about.md
 - Troubleshooting.md
-- webhook.js.md
+- colorStyles.md
 - When to Use_39.md
-- { afterEach, test }.md
-- ColorPicker
-- Common Rationalizations
-- _COMMUNITY_Community 11.md
+- colorStyles
 - Connections
-- GramsFields
-- isDarkColor
-- makeSandbox().md
+- Common Rationalizations
+- Connections
+- Connections
+- Connections
+- Connections
+- Connections
 - Overview
-- react-colorful
+- Connections
 - Red Flags
-- run().md
-- sandboxes_1.md
-- SKILL_LINT.md
-- { spawnSync }_1.md
-- updateColorField
-- VALIDATOR.md
+- Connections
+- Connections
+- DeadlineTag().md
+- DeadlineTag.tsx.md
+- deleteOrder().md
+- format.ts.md
 - Verification
 - When to Use
-- writeClaudeCommand().md
-- writeFile().md
-- writeFile
-- writeMatchingCommands().md
-- writeMatchingCommands
-- writeTomlCommand().md
-- writeTomlCommand
+- formatBRL().md
+- formatBRL
+- formatDate().md
+- formatDate
+- formatDateShort().md
+- getOrders
+- handleDelete().md
+- handleDelete
+- handleStatusChange().md
+- handleStatusChange
+- handleWhatsappClick().md
+- handleWhatsappClick
+- loadOrder().md
+- loadOrder
+- Login.tsx
+- NotificationChannel
+- Order.md
+- OrderCard.tsx.md
+- OrderCardProps.md
+- OrderDetail().md
+- OrderDetail
+- OrderDetail.tsx.md
+- ReminderForm.tsx
+- statusColors.md
+- storage.ts
+- toggleComplete
+- updateOrder().md
+- updateOrder
 
 ## God Nodes (most connected - your core abstractions)
 1. `Code Review and Quality` - 19 edges
 2. `Code Review and Quality` - 19 edges
 3. `compilerOptions` - 18 edges
-4. `react` - 15 edges
+4. `react` - 16 edges
 5. `compilerOptions` - 15 edges
 6. `Security Checklist` - 15 edges
 7. `Git Workflow and Versioning` - 15 edges
@@ -1710,17 +1731,17 @@
   README.md → src/components/ColorPicker.tsx
 - `Fases Concluídas` --references--> `GramsFields()`  [INFERRED]
   README.md → src/components/GramsFields.tsx
-- `loadOrders()` --calls--> `getOrders()`  [EXTRACTED]
-  src/pages/OrderList.tsx → src/lib/storage.ts
 - `AlertsBannerProps` --references--> `Order`  [EXTRACTED]
   src/components/AlertsBanner.tsx → src/lib/supabase.ts
 - `ColorPickerProps` --references--> `Color`  [EXTRACTED]
   src/components/ColorPicker.tsx → src/lib/supabase.ts
+- `GramsFieldsProps` --references--> `Color`  [EXTRACTED]
+  src/components/GramsFields.tsx → src/lib/supabase.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (1703 total, 618 thin omitted)
+## Communities (1724 total, 610 thin omitted)
 
 ### Community 0 - "skill-lint-test.js"
 Cohesion: 0.07
@@ -1740,19 +1761,19 @@ Nodes (21): ARTIFACT_ALLOWLIST, findViolations(), fs, GUARDED_FILES, main(), pat
 
 ### Community 5 - "storage.ts"
 Cohesion: 0.12
-Nodes (26): createReminder(), deleteReminder(), getOrders(), getReminderById(), getReminders(), updateOrder(), updateReminder(), Reminder (+18 more)
+Nodes (24): createReminder(), deleteReminder(), getOrders(), getReminders(), updateOrder(), updateReminder(), Reminder, ReminderCategory (+16 more)
 
 ### Community 6 - "compilerOptions"
 Cohesion: 0.10
 Nodes (19): compilerOptions, allowArbitraryExtensions, allowImportingTsExtensions, erasableSyntaxOnly, jsx, lib, module, moduleDetection (+11 more)
 
 ### Community 7 - "supabase.ts"
-Cohesion: 0.12
-Nodes (21): Fases Concluídas, react-colorful, ColorPicker(), addColor(), addColorStop(), ColorPickerProps, COLOR_PALETTE, getContrastColor() (+13 more)
+Cohesion: 0.09
+Nodes (28): Fases Concluídas, react-colorful, ColorPicker(), addColor(), addColorStop(), ColorPickerProps, COLOR_PALETTE, getContrastColor() (+20 more)
 
 ### Community 8 - "package.json"
-Cohesion: 0.08
-Nodes (25): author, description, keywords, license, main, name, private, scripts (+17 more)
+Cohesion: 0.06
+Nodes (33): author, dependencies, browser-image-compression, date-fns, react, react-colorful, react-dom, react-router-dom (+25 more)
 
 ### Community 9 - "compilerOptions"
 Cohesion: 0.12
@@ -1767,12 +1788,12 @@ Cohesion: 0.16
 Nodes (13): { afterEach, test }, assert, fs, os, path, sandboxes, SKILL_LINT, { spawnSync } (+5 more)
 
 ### Community 12 - "App.tsx"
-Cohesion: 0.08
-Nodes (32): Button, react, react-dom, ref_react_router, @supabase/supabase-js, App(), ProtectedLayout(), src_index (+24 more)
+Cohesion: 0.12
+Nodes (22): Button, react, react-dom, ref_react_router, App(), ProtectedLayout(), src_index, AuthContext (+14 more)
 
 ### Community 13 - "OrderDetail.tsx"
-Cohesion: 0.12
-Nodes (21): date-fns, AlertsBanner(), AlertsBannerProps, colorStyles, DeadlineTag(), DeadlineTagProps, OrderCard(), OrderCardProps (+13 more)
+Cohesion: 0.14
+Nodes (21): ModelFileUpload(), handleDownload(), handleFileChange(), handleOpenInSlicer(), handleRemove(), ModelFileUploadProps, OrderCard(), statusColors (+13 more)
 
 ### Community 14 - "validate-reference-links-test.js"
 Cohesion: 0.06
@@ -1783,28 +1804,28 @@ Cohesion: 0.27
 Nodes (9): browser-image-compression, PhotoThumb(), PhotoUpload(), handleFileChange(), handleRemove(), PhotoUploadProps, deletePhoto(), getSignedPhotoUrl() (+1 more)
 
 ### Community 16 - "_COMMUNITY__COMMUNITY_Community 13.md"
-Cohesion: 0.01
-Nodes (133): Connections, Connections, Connections, Connections, Connections, Connections, Connections, Connections (+125 more)
+Cohesion: 0.13
+Nodes (4): Connections, Connections, Connections, formatWhatsappForDisplay().md
 
-### Community 17 - "supabase"
-Cohesion: 0.24
-Nodes (9): subscribeUserToPush(), urlBase64ToUint8Array(), _optionalChain(), subscribeUserToPush(), urlBase64ToUint8Array(), supabase, OrderList(), handleEnablePush() (+1 more)
+### Community 17 - "Web Quality Skills"
+Cohesion: 0.05
+Nodes (40): How it works, Install (one command), No symlinks (Windows or personal preference), Optional live browser measurements, Usage, Using web-quality-skills with Codex, How it works, Install (one command) (+32 more)
 
 ### Community 18 - "simplify-ignore.sh"
 Cohesion: 0.36
 Nodes (11): block_hash(), escape_glob(), expand_file(), file_id(), file_is_whole(), filter_file(), has_placeholders(), hash_cmd() (+3 more)
 
-### Community 19 - "OrderForm.tsx_2.md"
-Cohesion: 0.07
-Nodes (22): Connections, createOrder(), Connections, format.ts, Connections, formatDateShort(), Connections, formatWhatsappInput() (+14 more)
+### Community 19 - "Best practices"
+Cohesion: 0.06
+Nodes (31): Avoid blocking patterns, Avoid these, Best practices, Browser compatibility, Character encoding, Code quality, Console & errors, Deprecated APIs (+23 more)
 
-### Community 20 - "ModelFileUpload.tsx"
-Cohesion: 0.26
-Nodes (10): ModelFileUpload(), handleDownload(), handleFileChange(), handleOpenInSlicer(), handleRemove(), ModelFileUploadProps, delete3mf(), getSigned3mfUrl() (+2 more)
+### Community 20 - "SEO optimization"
+Cohesion: 0.08
+Nodes (25): Agentic browsing and AI discoverability, Crawlability, Crawler controls are product-specific, Critical, Evidence-led audit workflow, Font sizes, High priority, Hreflang tags (+17 more)
 
 ### Community 21 - "_COMMUNITY_OrderForm.tsx.md"
-Cohesion: 0.06
-Nodes (28): addColor(), Connections, addColorStop(), Connections, Color, Connections, COLOR_PALETTE, Connections (+20 more)
+Cohesion: 0.03
+Nodes (60): addColor(), Connections, addColorStop(), Connections, Color, Connections, COLOR_PALETTE, Connections (+52 more)
 
 ### Community 22 - "apply_entries"
 Cohesion: 0.29
@@ -1826,9 +1847,9 @@ Nodes (7): description, name, owner, name, url, plugins, $schema
 Cohesion: 0.39
 Nodes (5): assert_eq(), hash_key(), run_hook(), seed_entry(), sdd-cache-test.sh script
 
-### Community 28 - "package.json_2.md"
-Cohesion: 0.01
-Nodes (174): App(), Connections, App.tsx, Connections, auth.tsx, Connections, AuthContext, Connections (+166 more)
+### Community 28 - "_COMMUNITY_storage.ts.md"
+Cohesion: 0.02
+Nodes (112): categoryColors, Connections, checkAndSendScheduledNotifications(), Connections, checkAndSendScheduledNotifications(), Connections, collectPendingItems(), Connections (+104 more)
 
 ### Community 29 - "test-driven-development/package.json"
 Cohesion: 0.29
@@ -1836,7 +1857,7 @@ Nodes (6): description, name, private, scripts, test, version
 
 ### Community 30 - "_COMMUNITY__COMMUNITY_Community 16.md"
 Cohesion: 0.02
-Nodes (89): { afterEach, test }_2.md, Connections, { afterEach, test }, Connections, assert_12.md, Connections, assert, Connections (+81 more)
+Nodes (84): { afterEach, test }_2.md, Connections, { afterEach, test }, Connections, assert_12.md, Connections, assert, Connections (+76 more)
 
 ### Community 31 - "ci-cd-and-automation/package.json"
 Cohesion: 0.33
@@ -1856,7 +1877,7 @@ Nodes (4): dbg(), extract_header(), hash_key(), sdd-cache-post.sh script
 
 ### Community 36 - "_COMMUNITY__COMMUNITY_Community 5.md"
 Cohesion: 0.02
-Nodes (106): categoryColors, Connections, Connections, Community 5, Connections, Connections, Connections, Connections (+98 more)
+Nodes (109): categoryColors, Connections, Connections, Community 5, Connections, Connections, Connections, Connections (+101 more)
 
 ### Community 37 - "validate-commands-test.js.md"
 Cohesion: 0.05
@@ -1867,8 +1888,8 @@ Cohesion: 0.83
 Nodes (3): dbg(), hash_key(), sdd-cache-pre.sh script
 
 ### Community 40 - "_COMMUNITY_package.json.md"
-Cohesion: 0.06
-Nodes (26): Connections to other communities, Live Query (requires Dataview plugin), Members, package.json.md, Top bridge nodes, Connections, Connections, Connections (+18 more)
+Cohesion: 0.07
+Nodes (20): Connections to other communities, Live Query (requires Dataview plugin), Members, package.json.md, Top bridge nodes, Connections, Connections, Connections (+12 more)
 
 ### Community 41 - "floor-guard-reference-test.js.md"
 Cohesion: 0.05
@@ -1891,8 +1912,8 @@ Cohesion: 0.05
 Nodes (33): { afterEach, test }, Connections, assert, Connections, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes (+25 more)
 
 ### Community 54 - "_COMMUNITY_ModelFileUpload.tsx.md"
-Cohesion: 0.08
-Nodes (24): Connections, delete3mf(), Connections, formatFileSize(), Connections, getSigned3mfUrl(), Connections, handleDownload() (+16 more)
+Cohesion: 0.07
+Nodes (29): Connections to other communities, Live Query (requires Dataview plugin), Members, ModelFileUpload.tsx, Top bridge nodes, Connections, delete3mf(), Connections (+21 more)
 
 ### Community 55 - "_COMMUNITY_AlertsBanner.tsx.md"
 Cohesion: 0.05
@@ -1914,9 +1935,9 @@ Nodes (37): 1. **Serviço de Notificações** (`NotificationService.ts`), 1. Tes
 Cohesion: 0.05
 Nodes (36): assert, Connections, Connections, FENCE_KNOWN, Connections, fmLines(), Connections, fs (+28 more)
 
-### Community 60 - "PhotoUpload.tsx"
-Cohesion: 0.40
-Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, PhotoUpload.tsx, Top bridge nodes
+### Community 60 - "_COMMUNITY_PhotoUpload.tsx.md"
+Cohesion: 0.07
+Nodes (27): browser-image-compression, Connections, Connections to other communities, Live Query (requires Dataview plugin), Members, PhotoUpload.tsx, Top bridge nodes, Connections (+19 more)
 
 ### Community 61 - "validate-reference-links.js.md"
 Cohesion: 0.07
@@ -1958,9 +1979,9 @@ Nodes (29): Browser Testing with DevTools, Common Rationalizations, DAMP Over DR
 Cohesion: 0.07
 Nodes (29): Antes de PR, Análise de Impacto, Após commit, 📊 Atalhos de Teclado Obsidian, Atualização completa, Backup do vault, Bloco de Investigação, Checklist de Feature (+21 more)
 
-### Community 71 - "Connections_114.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, webhook.js
+### Community 71 - "_COMMUNITY_webhook.test.js_1.md"
+Cohesion: 0.05
+Nodes (29): assert, Connections, assert_6.md, Connections, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes (+21 more)
 
 ### Community 72 - "_COMMUNITY_Community 28.md"
 Cohesion: 0.16
@@ -2006,9 +2027,9 @@ Nodes (26): 1. Commit Early, Commit Often, 2. Atomic Commits, 3. Descriptive Mes
 Cohesion: 0.07
 Nodes (25): Connection Pool Exhaustion, Large Bundle Size, Missing Caching (Backend), Missing Image Optimization (Frontend), N+1 Queries (Backend), Optimization Patterns, Queries That Ignore Their Index, Unbounded Data Fetching (+17 more)
 
-### Community 83 - "🐛 Resolução: Problema ao Adicionar Lembretes"
-Cohesion: 0.08
-Nodes (26): 1. Análise do Código, 1. Melhorias na mensagem de erro, 1. Verificar tabela no Supabase, 2. Banner informativo na lista, 2. Fluxo de Criação de Lembrete, 2. Verificar autenticação, 3. Possíveis Causas Identificadas, 3. Testar criação manualmente (+18 more)
+### Community 83 - "3. Possíveis Causas Identificadas"
+Cohesion: 0.25
+Nodes (8): 1. Análise do Código, 2. Fluxo de Criação de Lembrete, 3. Possíveis Causas Identificadas, ❌ Campo obrigatório faltando, ❌ Erro de autenticação, 🔬 Investigação Realizada, ❌ Política RLS bloqueando inserção, ❌ Tabela não criada no Supabase
 
 ### Community 84 - "🗺️ Roadmap - Encomendas 3D"
 Cohesion: 0.07
@@ -2088,11 +2109,11 @@ Nodes (23): 1. Abrir no Obsidian, 2. Explorar o Grafo, 3. Comandos Graphify para
 
 ### Community 103 - "_COMMUNITY__COMMUNITY_Community 30.md"
 Cohesion: 0.04
-Nodes (37): Community 30, Connections, Connections, Connections, Connections, Connections, Connections, Connections (+29 more)
+Nodes (42): Community 30, Connections, Connections, _COMMUNITY_Community 30.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes (+34 more)
 
 ### Community 104 - "_COMMUNITY__COMMUNITY_Community 32.md"
-Cohesion: 0.03
-Nodes (47): Community 32, Connections, Connections, _COMMUNITY_Community 32.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes (+39 more)
+Cohesion: 0.04
+Nodes (43): Community 32, Connections, Connections, _COMMUNITY_Community 32.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes (+35 more)
 
 ### Community 105 - "skill-lint.js.md"
 Cohesion: 0.05
@@ -2158,17 +2179,17 @@ Nodes (21): Common Rationalizations, Context Efficiency, Core Process, Cross-Ski
 Cohesion: 0.10
 Nodes (21): Adoption, Agent Personas, Agent Skills, All 25 Skills, Build - Write the code, Commands, Contributing, Define - Clarify what to build (+13 more)
 
-### Community 122 - "Community 36.md"
-Cohesion: 0.13
-Nodes (10): Community 36, Connections, Connections, Connections to other communities, Connections, Live Query (requires Dataview plugin), Connections, Members (+2 more)
+### Community 122 - "_COMMUNITY__COMMUNITY_Community 36.md"
+Cohesion: 0.04
+Nodes (38): build, Connections, Community 36, Connections, Connections, Connections, Connections, Connections (+30 more)
 
 ### Community 123 - "_COMMUNITY__COMMUNITY_Community 14.md"
 Cohesion: 0.02
 Nodes (94): { afterEach, test }_1.md, Connections, { afterEach, test }, Connections, assert_11.md, Connections, assert, Connections (+86 more)
 
-### Community 124 - "_COMMUNITY__COMMUNITY_Community 15.md"
-Cohesion: 0.15
-Nodes (10): browser-image-compression.md, Connections, browser-image-compression, Connections, Connections, Connections, Connections, Connections (+2 more)
+### Community 124 - "Performance optimization"
+Cohesion: 0.09
+Nodes (23): Cache-Control headers, Caching strategy, Critical rendering path, Facade pattern, Font optimization, Format selection, How it works, Image optimization (+15 more)
 
 ### Community 125 - "_COMMUNITY_Community 2.md"
 Cohesion: 0.03
@@ -2199,8 +2220,8 @@ Cohesion: 0.11
 Nodes (18): Common Rationalizations, Output Files, Overview, Parallelization Opportunities, Plan Document Template, Planning and Task Breakdown, Red Flags, See Also (+10 more)
 
 ### Community 132 - "_COMMUNITY__COMMUNITY_Community 17.md"
-Cohesion: 0.02
-Nodes (84): AlertsBanner().md, Connections, AlertsBanner(), Connections, AlertsBanner.tsx.md, Connections, AlertsBanner.tsx, Connections (+76 more)
+Cohesion: 0.10
+Nodes (15): AlertsBannerProps.md, Connections, Connections, Connections, Connections, Connections, Connections, Connections (+7 more)
 
 ### Community 133 - "ADR Template"
 Cohesion: 0.11
@@ -2308,11 +2329,11 @@ Nodes (14): 1. Surface Assumptions, 2. Manage Confusion Actively, 3. Push Back W
 
 ### Community 159 - "_COMMUNITY_config-parser.test.js_1.md"
 Cohesion: 0.05
-Nodes (28): assert, Connections, config-parser.test.js.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes, config-parser.js (+20 more)
+Nodes (29): assert, Connections, assert_2.md, Connections, config-parser.test.js.md, Connections to other communities, Live Query (requires Dataview plugin), Members (+21 more)
 
-### Community 160 - "Connections_107.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, reports.js
+### Community 160 - "_COMMUNITY_reports.test.js.md"
+Cohesion: 0.05
+Nodes (29): assert, Connections, assert_5.md, Connections, Connections to other communities, Live Query (requires Dataview plugin), Members, reports.test.js.md (+21 more)
 
 ### Community 161 - "_COMMUNITY_webhook.test.js.md"
 Cohesion: 0.10
@@ -2320,7 +2341,7 @@ Nodes (15): assert, Connections, Connections to other communities, Live Query (r
 
 ### Community 162 - "_COMMUNITY_split.test.js_1.md"
 Cohesion: 0.05
-Nodes (30): assert, Connections, assert_7.md, Connections, Connections to other communities, Live Query (requires Dataview plugin), Members, split.test.js.md (+22 more)
+Nodes (29): assert, Connections, assert_7.md, Connections, Connections to other communities, Live Query (requires Dataview plugin), Members, split.test.js.md (+21 more)
 
 ### Community 163 - "run-evals-test.js.md"
 Cohesion: 0.05
@@ -2335,24 +2356,24 @@ Cohesion: 0.03
 Nodes (70): buildCorpus(), Connections, CASES_DIR, Connections, clearGradingSlot(), Connections, Connections, cosine() (+62 more)
 
 ### Community 166 - "_COMMUNITY__COMMUNITY_Community 41.md"
-Cohesion: 0.06
-Nodes (28): Community 41, Connections, Connections, _COMMUNITY_Community 41.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes (+20 more)
+Cohesion: 0.07
+Nodes (23): Community 41, Connections, Connections, Connections, Connections, Connections, Connections, Connections (+15 more)
 
 ### Community 167 - "_COMMUNITY__COMMUNITY_Community 12.md"
 Cohesion: 0.02
-Nodes (109): App().md, Connections, App(), Connections, App.tsx.md, Connections, auth.tsx.md, Connections (+101 more)
+Nodes (123): App().md, Connections, App(), Connections, App(), Connections, App.tsx.md, Connections (+115 more)
 
 ### Community 168 - "_COMMUNITY_validate-commands.js_1.md"
-Cohesion: 0.07
-Nodes (22): Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes, validate-commands.js.md, Connections, Connections, Connections (+14 more)
+Cohesion: 0.06
+Nodes (25): Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes, validate-commands.js.md, Connections, Connections, Connections (+17 more)
 
 ### Community 169 - "_COMMUNITY_validate-artifact-paths.js.md"
-Cohesion: 0.05
-Nodes (32): Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes, validate-artifact-paths.js.md, Connections, Connections, Connections (+24 more)
+Cohesion: 0.06
+Nodes (28): Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes, validate-artifact-paths.js.md, Connections, Connections, Connections (+20 more)
 
 ### Community 170 - "_COMMUNITY_ref_fs.md"
 Cohesion: 0.05
-Nodes (29): Connections to other communities, Live Query (requires Dataview plugin), Members, ref_fs.md, Top bridge nodes, Connections, Connections, Connections (+21 more)
+Nodes (30): Connections to other communities, Live Query (requires Dataview plugin), Members, ref_fs.md, Top bridge nodes, Connections, Connections, Connections (+22 more)
 
 ### Community 172 - "_COMMUNITY_API and Interface Design.md"
 Cohesion: 0.16
@@ -2408,7 +2429,7 @@ Nodes (12): Adding a new persona, Agent Personas, Claude Code interop, Decision 
 
 ### Community 185 - "_COMMUNITY_Community 0.md"
 Cohesion: 0.03
-Nodes (66): Connections, Connections, Connections, Connections, Connections, Connections, Connections, Connections (+58 more)
+Nodes (68): Connections, Connections, Connections, Connections, Connections, Connections, Connections, Connections (+60 more)
 
 ### Community 186 - "Refinement & Evaluation Criteria"
 Cohesion: 0.17
@@ -2418,17 +2439,17 @@ Nodes (11): 1. User Value, 2. Feasibility, 3. Differentiation, Assumption Audit,
 Cohesion: 0.17
 Nodes (11): 1. User Value, 2. Feasibility, 3. Differentiation, Assumption Audit, Core Evaluation Dimensions, Decision Framework, Might Be True (Nice to Have), Must Be True (Dealbreakers) (+3 more)
 
-### Community 188 - "Connections_165.md"
-Cohesion: 0.33
-Nodes (4): app.test.js, Connections, Connections, Connections
+### Community 188 - "_COMMUNITY_ref_node_test_1.md"
+Cohesion: 0.06
+Nodes (27): app.test.js, Connections, Connections, assert, Connections, assert_4.md, Connections, Connections to other communities (+19 more)
 
-### Community 189 - "Connections_170.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, pagination.test.js
+### Community 189 - "_COMMUNITY_ref_node_assert_1.md"
+Cohesion: 0.06
+Nodes (27): assert, Connections, assert_3.md, Connections, Connections to other communities, Live Query (requires Dataview plugin), Members, ref_node_assert.md (+19 more)
 
-### Community 190 - "_COMMUNITY_Community 15.md"
-Cohesion: 0.10
-Nodes (17): Connections, Connections, deletePhoto().md, Connections, getSignedPhotoUrl().md, Connections, handleFileChange().md, Connections (+9 more)
+### Community 190 - "_COMMUNITY__COMMUNITY_Community 15.md"
+Cohesion: 0.03
+Nodes (72): browser-image-compression.md, Connections, browser-image-compression, Connections, Community 15, Connections, Connections, _COMMUNITY_Community 15.md (+64 more)
 
 ### Community 191 - "validate-commands.js_2.md"
 Cohesion: 0.06
@@ -2444,7 +2465,7 @@ Nodes (23): Connections to other communities, Live Query (requires Dataview plug
 
 ### Community 194 - "_COMMUNITY_skill-lint-test.js_1.md"
 Cohesion: 0.03
-Nodes (63): assert.md, Connections, assert, Connections, Connections to other communities, Live Query (requires Dataview plugin), Members, skill-lint-test.js.md (+55 more)
+Nodes (65): assert.md, Connections, assert, Connections, Connections to other communities, Live Query (requires Dataview plugin), Members, skill-lint-test.js.md (+57 more)
 
 ### Community 195 - "Review Framework"
 Cohesion: 0.18
@@ -2474,9 +2495,9 @@ Nodes (10): 1. The mental model, 2. Local setup, 3. The verification loop, 4. Co
 Cohesion: 0.20
 Nodes (10): 🚀 Comandos Úteis, 🔑 Componentes Principais, 📈 Estatísticas do Projeto, 🔗 Links Externos, 🎯 Navegação Rápida, Para Criar:, 🏠 Sistema de Encomendas 3D - Início, 🛠️ Utilidades (+2 more)
 
-### Community 202 - "_COMMUNITY__COMMUNITY_Community 4.md"
-Cohesion: 0.08
-Nodes (20): ARTIFACT_ALLOWLIST, Connections, Connections, _COMMUNITY_Community 4.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes (+12 more)
+### Community 202 - "_COMMUNITY_Community 4.md"
+Cohesion: 0.09
+Nodes (17): ARTIFACT_ALLOWLIST, Connections, Connections, Connections, Connections, Connections, Connections, Connections (+9 more)
 
 ### Community 203 - "_COMMUNITY_Community 44.md"
 Cohesion: 0.07
@@ -2507,16 +2528,16 @@ Cohesion: 0.22
 Nodes (8): Analogous Inspiration, Constraint-Based Ideation, First Principles Thinking, How Might We (HMW), Ideation Frameworks Reference, Jobs to Be Done (JTBD), Pre-mortem, SCAMPER
 
 ### Community 210 - "_COMMUNITY__COMMUNITY_Community 40.md"
-Cohesion: 0.09
-Nodes (16): Community 40, Connections, Connections, Connections, Connections, Connections, Connections to other communities, Connections (+8 more)
+Cohesion: 0.08
+Nodes (21): Community 40, Connections, Connections, _COMMUNITY_Community 40.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes (+13 more)
 
 ### Community 211 - "_COMMUNITY_agent-skillsREADME.md"
-Cohesion: 0.03
-Nodes (37): Connections, Adding or changing a skill, Connections, Connections, Connections, agent-skills/README.md, Connections, agents.md (+29 more)
+Cohesion: 0.04
+Nodes (31): Adding or changing a skill, Connections, Connections, Connections, agent-skills/README.md, Connections, agents.md, Connections (+23 more)
 
 ### Community 212 - "_COMMUNITY_lintSkillContent().md"
-Cohesion: 0.04
-Nodes (48): Connections, Connections, Connections, Connections, Connections, Connections, Connections, Connections (+40 more)
+Cohesion: 0.03
+Nodes (57): Connections, Connections, Connections, Connections, Connections, Connections, Connections, Connections (+49 more)
 
 ### Community 213 - "Core Principles_3.md"
 Cohesion: 0.11
@@ -2564,15 +2585,15 @@ Nodes (51): Connections to other communities, Live Query (requires Dataview plug
 
 ### Community 224 - "_COMMUNITY__COMMUNITY_Community 0.md"
 Cohesion: 0.03
-Nodes (51): AGENTS_DIR.md, Connections, AGENTS_DIR, Connections, _COMMUNITY_Community 0.md, Connections to other communities, Live Query (requires Dataview plugin), Members (+43 more)
+Nodes (47): AGENTS_DIR.md, Connections, AGENTS_DIR, Connections, _COMMUNITY_Community 0.md, Connections to other communities, Live Query (requires Dataview plugin), Members (+39 more)
 
 ### Community 225 - "Using agent-skills with GitHub Copilot CLI.md"
 Cohesion: 0.17
 Nodes (8): Connections, Usage, Connections, Using agent-skills with GitHub Copilot CLI, Connections, Verify, Connections, What you get, and what you don't
 
-### Community 226 - "_COMMUNITY_Community 1.md"
-Cohesion: 0.01
-Nodes (146): Connections, assert, Connections, assert, Connections, assert, Connections, assert (+138 more)
+### Community 226 - "_COMMUNITY__COMMUNITY_Community 1.md"
+Cohesion: 0.04
+Nodes (41): assert_1.md, Connections, assert, Connections, assert, Connections, Connections, _COMMUNITY_Community 1.md (+33 more)
 
 ### Community 227 - "split.test.js"
 Cohesion: 0.40
@@ -2622,9 +2643,9 @@ Nodes (4): API, Invariants, split-payment, Tests
 Cohesion: 0.40
 Nodes (5): Community 0, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
 
-### Community 239 - "_COMMUNITY_floor-guard-reference-test.js_1.md"
-Cohesion: 0.02
-Nodes (107): { after, before, test }.md, Connections, { after, before, test }, Connections, assert, Connections, assert_9.md, Connections (+99 more)
+### Community 239 - "_COMMUNITY_Community 10.md"
+Cohesion: 0.11
+Nodes (15): Community 10, Connections, Community 10, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes, Connections (+7 more)
 
 ### Community 240 - "Community 12"
 Cohesion: 0.40
@@ -2638,17 +2659,17 @@ Nodes (5): Community 13, Connections to other communities, Live Query (requires 
 Cohesion: 0.15
 Nodes (10): Connections, Connections, Connections, Connections, Connections, getPhotoUrl(), Connections, ModelFileUploadProps.md (+2 more)
 
-### Community 243 - "Community 1.md"
-Cohesion: 0.13
-Nodes (10): Community 1, Connections, Connections, Connections to other communities, Connections, Live Query (requires Dataview plugin), Connections, Members (+2 more)
+### Community 243 - "_COMMUNITY_Community 1.md"
+Cohesion: 0.11
+Nodes (15): Community 1, Connections, Community 1, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes, Connections (+7 more)
 
 ### Community 244 - "API and Interface Design.md"
 Cohesion: 0.13
 Nodes (10): agent-skills/skills/api-and-interface-design/SKILL.md, Connections, API and Interface Design, Connections, Connections, Overview, Connections, Red Flags (+2 more)
 
-### Community 245 - "Community 21"
-Cohesion: 0.40
-Nodes (5): Community 21, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
+### Community 245 - "budgetEngine.ts"
+Cohesion: 0.14
+Nodes (15): BudgetLineItem, BudgetParameters, FinishesSpec, MaterialSpec, PrinterSpec, calculateItemCosts(), DEFAULT_ACCESSORIES, DEFAULT_BUDGET_PARAMS (+7 more)
 
 ### Community 246 - "Community 2"
 Cohesion: 0.40
@@ -2698,9 +2719,9 @@ Nodes (35): clearGradingSlot().md, Connections, clearGradingSlot(), Connections,
 Cohesion: 0.15
 Nodes (10): allowImportingTsExtensions, Connections, Connections, allowImportingTsExtensions.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes (+2 more)
 
-### Community 261 - "Connections_157.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, slug.js
+### Community 261 - "_COMMUNITY_slug.test.js.md"
+Cohesion: 0.04
+Nodes (35): Connections to other communities, Live Query (requires Dataview plugin), Members, slug.test.js.md, Top bridge nodes, Connections, Connections, Connections (+27 more)
 
 ### Community 262 - "_COMMUNITY_erasableSyntaxOnly.md"
 Cohesion: 0.15
@@ -2748,15 +2769,15 @@ Nodes (31): Common Rationalizations, Connections, Live Query (requires Dataview 
 
 ### Community 274 - "_COMMUNITY_react.md"
 Cohesion: 0.05
-Nodes (30): Button.md, Connections, Button, Connections, Button.tsx.md, Connections, Button.tsx, Connections (+22 more)
+Nodes (34): Button.md, Connections, Button, Connections, Button.tsx.md, Connections, Button.tsx, Connections (+26 more)
 
 ### Community 275 - "_COMMUNITY_module.md"
 Cohesion: 0.15
 Nodes (10): Connections to other communities, Live Query (requires Dataview plugin), Members, module.md, Top bridge nodes, Connections, Connections, Connections (+2 more)
 
 ### Community 276 - "_COMMUNITY__COMMUNITY_Community 42.md"
-Cohesion: 0.07
-Nodes (24): Community 42, Connections, Connections, Connections, Connections, Connections, Connections, Connections (+16 more)
+Cohesion: 0.05
+Nodes (33): Community 42, Connections, Connections, _COMMUNITY_Community 42.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes (+25 more)
 
 ### Community 277 - "_COMMUNITY_moduleDetection.md"
 Cohesion: 0.15
@@ -2822,9 +2843,9 @@ Nodes (10): Connections to other communities, Live Query (requires Dataview plug
 Cohesion: 0.13
 Nodes (11): compilerOptions_1.md, Connections, compilerOptions, Connections, Connections, Connections, Connections, Connections (+3 more)
 
-### Community 305 - "_COMMUNITY_Community 4.md"
-Cohesion: 0.05
-Nodes (30): Connections, Connections, Connections, Connections, Connections, Connections, Connections, Connections (+22 more)
+### Community 305 - "_COMMUNITY_loadCommands().md"
+Cohesion: 0.07
+Nodes (25): Connections, Connections, Connections, Connections, Connections, Connections, Connections, Connections (+17 more)
 
 ### Community 306 - "_COMMUNITY_types.md"
 Cohesion: 0.15
@@ -2883,8 +2904,8 @@ Cohesion: 0.09
 Nodes (19): Community 18, Connections, Connections, Connections, Connections, Connections, Connections, Connections (+11 more)
 
 ### Community 361 - "_COMMUNITY_Encomendas 3D - PWA para Android + Computador.md"
-Cohesion: 0.08
-Nodes (19): Como Instalar no Android, Connections, Como Rodar Localmente, Connections, Comportamento do "Abrir no Fatiador", Connections, Configuração do Supabase, Connections (+11 more)
+Cohesion: 0.07
+Nodes (24): Connections to other communities, Encomendas 3D - PWA para Android + Computador, Live Query (requires Dataview plugin), Members, Top bridge nodes, Como Instalar no Android, Connections, Como Rodar Localmente (+16 more)
 
 ### Community 362 - "_COMMUNITY_push.js.md"
 Cohesion: 0.07
@@ -2906,9 +2927,9 @@ Nodes (21): agent-skills, Connections, Boundaries, Connections, Commands, Connec
 Cohesion: 0.09
 Nodes (18): Annotation syntax, Connections, Live Query (requires Dataview plugin), Members, simplify-ignore hook, Connections, Crash recovery, Connections (+10 more)
 
-### Community 367 - "_COMMUNITY__COMMUNITY_Community 3.md"
+### Community 367 - "storage.js_1.md"
 Cohesion: 0.09
-Nodes (18): _asyncOptionalChain().md, Connections, _asyncOptionalChain(), Connections, Connections, Connections, Connections, Connections (+10 more)
+Nodes (16): _asyncOptionalChain().md, Connections, _asyncOptionalChain(), Connections, Connections, Connections, Connections, Connections (+8 more)
 
 ### Community 368 - "Hardening Controls.md"
 Cohesion: 0.07
@@ -2923,16 +2944,16 @@ Cohesion: 0.09
 Nodes (18): Connections to other communities, findViolations()_1.md, Live Query (requires Dataview plugin), Members, Top bridge nodes, Connections, Connections, Connections (+10 more)
 
 ### Community 371 - "_COMMUNITY_lintSkill().md"
-Cohesion: 0.08
-Nodes (23): Connections to other communities, lintSkill().md, Live Query (requires Dataview plugin), Members, Top bridge nodes, Connections, Connections, Connections (+15 more)
+Cohesion: 0.09
+Nodes (19): Connections to other communities, lintSkill().md, Live Query (requires Dataview plugin), Members, Top bridge nodes, Connections, Connections, Connections (+11 more)
 
 ### Community 372 - "_COMMUNITY_Using agent-skills with Windsurf.md"
 Cohesion: 0.09
 Nodes (18): Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes, Using agent-skills with Windsurf, Connections, Global Rules, Connections (+10 more)
 
-### Community 373 - "Connections_256.md"
-Cohesion: 0.33
-Nodes (4): app.js, Connections, Connections, Connections
+### Community 373 - "_COMMUNITY_total().md"
+Cohesion: 0.09
+Nodes (17): app.js.md, Connections, app.js, Connections, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes (+9 more)
 
 ### Community 374 - "_COMMUNITY_ref_node_assert.md"
 Cohesion: 0.09
@@ -2966,21 +2987,21 @@ Nodes (16): Common Rationalizations, Connections, Connections, Overview, Connect
 Cohesion: 0.09
 Nodes (16): Connections to other communities, include_1.md, Live Query (requires Dataview plugin), Members, Top bridge nodes, Connections, Connections, Connections (+8 more)
 
-### Community 382 - "Connections_267.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, pagination.js
+### Community 382 - "_COMMUNITY_paginate().md"
+Cohesion: 0.09
+Nodes (17): Connections to other communities, Live Query (requires Dataview plugin), Members, paginate().md, Top bridge nodes, Connections, Connections, Connections (+9 more)
 
-### Community 383 - "devDependencies_2.md"
-Cohesion: 0.08
-Nodes (16): Connections, devDependencies, Connections, oxlint, Connections, sharp, Connections, tailwindcss (+8 more)
+### Community 383 - "_COMMUNITY_package.json_1.md"
+Cohesion: 0.02
+Nodes (83): author, Connections, build, Connections, Connections to other communities, Live Query (requires Dataview plugin), Members, package.json (+75 more)
 
 ### Community 384 - "_COMMUNITY_Worked example Agent Teams for competing-hypothesis debugging.md"
 Cohesion: 0.12
 Nodes (12): Anti-pattern in this scenario, Connections, Connections, Setup (one-time, per-environment), Connections, The trigger prompt, Connections, What happens (+4 more)
 
 ### Community 385 - "📝 Changelog - Sistema de Notificações e Relatórios"
-Cohesion: 0.09
-Nodes (22): 🐛 Bug Investigado: Adicionar Lembretes, 🔔 Canais de Notificação, 📝 Changelog - Sistema de Notificações e Relatórios, Curto Prazo (Esta semana), Documentação, 📊 Estatísticas do Grafo, 🎯 Ideias de Notificação (Propostas), Interface (+14 more)
+Cohesion: 0.20
+Nodes (8): 🐛 Bug Investigado: Adicionar Lembretes, 📝 Changelog - Sistema de Notificações e Relatórios, Documentação, 📊 Estatísticas do Grafo, Interface, 🔗 Links Úteis, 🔧 Melhorias e Correções, 🏆 Recomendação Final
 
 ### Community 386 - "_COMMUNITY_Shipping and Launch.md"
 Cohesion: 0.12
@@ -3110,9 +3131,13 @@ Nodes (12): 1. Preserve Behavior Exactly, Connections, 2. Follow Project Convent
 Cohesion: 0.11
 Nodes (12): Built-in subagents to know about, Connections, Claude Code compatibility, Connections, Connections, Frontmatter restrictions for plugin agents, Connections, Spawning multiple subagents in parallel (+4 more)
 
-### Community 420 - "_COMMUNITY_validate-commands-test.js_1.md"
+### Community 419 - "web-quality/AGENTS.md"
 Cohesion: 0.11
-Nodes (12): assert_10.md, Connections, Connections, fs_5.md, Connections, os_2.md, Connections, path_5.md (+4 more)
+Nodes (17): Content guidelines, Directory structure, For code examples, For guidelines, For thresholds, Framework agnosticism, Live audit routing, Naming conventions (+9 more)
+
+### Community 420 - "_COMMUNITY_validate-commands-test.js_1.md"
+Cohesion: 0.02
+Nodes (103): { afterEach, test }.md, Connections, { afterEach, test }, Connections, assert_10.md, Connections, assert, Connections (+95 more)
 
 ### Community 421 - "_COMMUNITY_Community 27.md"
 Cohesion: 0.13
@@ -3162,9 +3187,9 @@ Nodes (10): ADR Lifecycle, Connections, ADR Template, Connections, Architecture 
 Cohesion: 0.15
 Nodes (10): Agent Expectations, Connections, Connections, Cross-compatible paths, Connections, Global installation, Connections, Option 2: Clone this repository (+2 more)
 
-### Community 433 - "_COMMUNITY_package.json_1.md"
-Cohesion: 0.12
-Nodes (10): author, Connections, Connections, name, Connections, private, Connections, react-router-dom (+2 more)
+### Community 433 - "Systematic Debugging"
+Cohesion: 0.11
+Nodes (17): Common Debugging Scenarios, Core Principle, Debugging Checklist, Integration with Other Skills, Intermittent Failures, "It worked before", Phase 1: Root Cause Investigation, Phase 2: Pattern Analysis (+9 more)
 
 ### Community 434 - "commandsbuild.md"
 Cohesion: 0.15
@@ -3175,12 +3200,12 @@ Cohesion: 0.16
 Nodes (10): Compress before dropping, Connections, Connections, Context Budget Management, Connections, Order for recency, Connections, What to cut first (+2 more)
 
 ### Community 436 - "_COMMUNITY_Deprecation and Migration_1.md"
-Cohesion: 0.16
-Nodes (10): Connections, Step 1: Build the Replacement, Connections, Step 2: Announce and Document, Connections, Step 3: Migrate Incrementally, Connections, Step 4: Remove the Old System (+2 more)
+Cohesion: 0.04
+Nodes (48): Adapter Pattern, Connections, agent-skills/skills/deprecation-and-migration/SKILL.md, Connections, Code Is a Liability, Connections, Common Rationalizations, Connections (+40 more)
 
-### Community 437 - "Community 15.md"
-Cohesion: 0.13
-Nodes (10): Community 15, Connections, Connections, Connections to other communities, Connections, Live Query (requires Dataview plugin), Connections, Members (+2 more)
+### Community 437 - "Web quality audit"
+Cohesion: 0.12
+Nodes (16): Accessibility, Agentic browsing, Audit categories, Audit output format, Before every deploy, Best practices, How it works, Monthly deep dive (+8 more)
 
 ### Community 438 - "dbg()_4.md"
 Cohesion: 0.14
@@ -3238,9 +3263,9 @@ Nodes (10): Accessibility (WCAG 2.1 AA), Connections, ARIA Labels, Connections, 
 Cohesion: 0.13
 Nodes (10): Adapter Pattern, Connections, Connections, Database Schema Migrations (Expand/Contract), Connections, Feature Flag Migration, Connections, Migration Patterns (+2 more)
 
-### Community 452 - "Migration Patterns_1.md"
-Cohesion: 0.13
-Nodes (10): Adapter Pattern, Connections, Connections, Database Schema Migrations (Expand/Contract), Connections, Feature Flag Migration, Connections, Migration Patterns (+2 more)
+### Community 452 - "_COMMUNITY_floor-guard-reference-test.js_1.md"
+Cohesion: 0.15
+Nodes (10): Connections, Connections, Connections, Connections, Connections, CONSTRAINTS.md, Connections, CONSTRAINTS (+2 more)
 
 ### Community 453 - "Context Engineering.md"
 Cohesion: 0.13
@@ -3266,9 +3291,9 @@ Nodes (10): Análise de Impacto, Connections, 🔍 Comandos Graphify Essenciais,
 Cohesion: 0.17
 Nodes (9): block_hash()_1.md, Connections, Connections, Connections, file_id()_1.md, Connections, hash_cmd()_1.md, Connections (+1 more)
 
-### Community 459 - "scripts_6.md"
+### Community 459 - "LCP optimization reference"
 Cohesion: 0.13
-Nodes (10): build, Connections, Connections, dev, Connections, lint, Connections, preview (+2 more)
+Nodes (14): 1. Server response time (TTFB), 2. Resource load time, 3. Render blocking resources, 4. Client-side rendering, Astro, Common issues, Debugging LCP, Detailed optimizations (+6 more)
 
 ### Community 460 - "Caching Strategies.md"
 Cohesion: 0.13
@@ -3298,9 +3323,9 @@ Nodes (10): Common Rationalizations, Connections, Connections, Core Web Vitals T
 Cohesion: 0.13
 Nodes (10): Community 0, Connections, Connections, Connections to other communities, Connections, Live Query (requires Dataview plugin), Connections, Members (+2 more)
 
-### Community 467 - "Community 11.md"
+### Community 467 - "Core Web Vitals optimization"
 Cohesion: 0.13
-Nodes (10): Community 11, Connections, Connections, Connections to other communities, Connections, Live Query (requires Dataview plugin), Connections, Members (+2 more)
+Nodes (15): CLS: Cumulative Layout Shift, Common LCP issues, Core Web Vitals optimization, Framework quick fixes, INP: Interaction to Next Paint, LCP element identification, LCP: Largest Contentful Paint, LCP optimization checklist (+7 more)
 
 ### Community 468 - "Community 12.md"
 Cohesion: 0.13
@@ -3326,9 +3351,9 @@ Nodes (10): Community 2, Connections, Connections, Connections to other communit
 Cohesion: 0.11
 Nodes (15): Community 20, Connections, Community 20, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes, Connections (+7 more)
 
-### Community 474 - "Community 21.md"
-Cohesion: 0.13
-Nodes (10): Community 21, Connections, Connections, Connections to other communities, Connections, Live Query (requires Dataview plugin), Connections, Members (+2 more)
+### Community 474 - "_COMMUNITY_Community 21.md"
+Cohesion: 0.06
+Nodes (30): Community 21, Connections, Community 21, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes, Connections (+22 more)
 
 ### Community 475 - "Community 28.md"
 Cohesion: 0.13
@@ -3338,9 +3363,9 @@ Nodes (10): Community 28, Connections, Connections, Connections to other communi
 Cohesion: 0.13
 Nodes (10): Community 4, Connections, Connections, Connections to other communities, Connections, Live Query (requires Dataview plugin), Connections, Members (+2 more)
 
-### Community 477 - "_COMMUNITY_Community 36.md"
-Cohesion: 0.20
-Nodes (5): Connections, Connections, Connections, lint_1.md, Connections
+### Community 477 - "auth.tsx.md"
+Cohesion: 0.13
+Nodes (10): auth.tsx, Connections, AuthContext, Connections, AuthContextType, Connections, Connections, supabase.js (+2 more)
 
 ### Community 478 - "Community 7.md"
 Cohesion: 0.13
@@ -3498,9 +3523,9 @@ Nodes (10): Connections, Step 1: Understand Before Touching (Chesterton's Fence)
 Cohesion: 0.13
 Nodes (10): Connections, Step 2: Localize, Connections, Step 3: Reduce, Connections, Step 4: Fix the Root Cause, Connections, Step 6: Verify End-to-End (+2 more)
 
-### Community 517 - "vite.config.ts_2.md"
+### Community 517 - "Community 17.md"
 Cohesion: 0.13
-Nodes (10): Connections, @tailwindcss/vite, Connections, vite, Connections, vite.config.ts, Connections, vite-plugin-pwa (+2 more)
+Nodes (10): Community 17, Connections, Connections, Connections to other communities, Connections, Live Query (requires Dataview plugin), Connections, Members (+2 more)
 
 ### Community 518 - "_COMMUNITY_🗺️ Roadmap - Encomendas 3D.md"
 Cohesion: 0.19
@@ -3511,8 +3536,8 @@ Cohesion: 0.19
 Nodes (8): Accessible Lists, Connections, ARIA Roles, Connections, Common HTML Patterns, Connections, Connections, Form Labels
 
 ### Community 520 - "_COMMUNITY_Path A  Greenfield full lifecycle from day one.md"
-Cohesion: 0.19
-Nodes (8): Add as the project grows, Connections, Connections, Day 0 | Install and wire up, Connections, Greenfield anti-patterns, Connections, Path A | Greenfield: full lifecycle from day one
+Cohesion: 0.05
+Nodes (35): Add as the project grows, Connections, Adoption Guide: New Projects vs. Established Codebases, Connections, Brownfield anti-patterns, Connections, Connections to other communities, Live Query (requires Dataview plugin) (+27 more)
 
 ### Community 521 - "_COMMUNITY_Hardening Controls.md"
 Cohesion: 0.19
@@ -3666,9 +3691,9 @@ Nodes (8): Adapting it, Connections, Connections, Contract, Connections, Floor g
 Cohesion: 0.17
 Nodes (8): agent-skills/skills/browser-testing-with-devtools/SKILL.md, Connections, Browser Testing with DevTools, Connections, Connections, Red Flags, Connections, Verification
 
-### Community 559 - "Deprecation and Migration_1.md"
-Cohesion: 0.17
-Nodes (8): agent-skills/skills/deprecation-and-migration/SKILL.md, Connections, Common Rationalizations, Connections, Connections, Deprecation and Migration, Connections, When to Use
+### Community 559 - "getOrderById()_2.md"
+Cohesion: 0.12
+Nodes (10): Connections, Connections, Connections, Connections, Connections, formatWhatsappInput(), Connections, getOrderById().md (+2 more)
 
 ### Community 560 - "Documentation and ADRs.md"
 Cohesion: 0.17
@@ -3762,9 +3787,9 @@ Nodes (8): CI Optimization, Connections, CI/CD and Automation, Connections, Conn
 Cohesion: 0.17
 Nodes (8): CI/CD and Automation, Connections, Connections, Environment Management, Connections, Feeding CI Failures Back to Agents, Connections, Verification
 
-### Community 583 - "Core Principles_5.md"
-Cohesion: 0.17
-Nodes (8): Code Is a Liability, Connections, Connections, Core Principles, Connections, Deprecation Planning Starts at Design Time, Connections, Hyrum's Law Makes Removal Hard
+### Community 583 - "Order"
+Cohesion: 0.18
+Nodes (10): date-fns, AlertsBanner(), AlertsBannerProps, colorStyles, DeadlineTag(), DeadlineTagProps, OrderCardProps, Order (+2 more)
 
 ### Community 584 - "Code Simplification_1.md"
 Cohesion: 0.17
@@ -3830,9 +3855,9 @@ Nodes (8): Confusion Management, Connections, Connections, The Inline Planning P
 Cohesion: 0.17
 Nodes (8): Connection pooling, Connections, Connections, Database, Connections, Index strategy, Connections, Query plans
 
-### Community 600 - "storage.js_1.md"
-Cohesion: 0.17
-Nodes (8): Connections, Connections, Connections, createOrder()_1.md, Connections, createOrder(), Connections, storage.js.md
+### Community 600 - "createOrder()_1_1.md"
+Cohesion: 0.22
+Nodes (6): Connections, Connections, Connections, createOrder()_1.md, Connections, createOrder()
 
 ### Community 601 - "file_id()_2.md"
 Cohesion: 0.17
@@ -4062,9 +4087,9 @@ Nodes (8): Connections, Step 3: Listen for "want vs. should want", Connections, 
 Cohesion: 0.17
 Nodes (12): devDependencies, oxlint, sharp, tailwindcss, @tailwindcss/vite, @types/node, @types/react, @types/react-dom (+4 more)
 
-### Community 658 - "{ afterEach, test }_4.md"
-Cohesion: 0.33
-Nodes (4): { afterEach, test }, Connections, Connections, Connections
+### Community 658 - "NotificationService.ts"
+Cohesion: 0.23
+Nodes (12): ReportPage(), handleDownloadHTML(), loadReport(), NotificationChannel, NotificationReport, PendingItem, checkAndSendScheduledNotifications(), collectPendingItems() (+4 more)
 
 ### Community 659 - "_COMMUNITY_Git Workflow and Versioning.md"
 Cohesion: 0.20
@@ -4246,9 +4271,9 @@ Nodes (6): Accessibility Checklist, Connections, Common Anti-Patterns, Connectio
 Cohesion: 0.17
 Nodes (8): Connections, Connections, Connections, delete3mf().md, Connections, handleRemove()_1.md, Connections, handleRemove()
 
-### Community 705 - "Adoption Guide New Projects vs. Established Codebases.md"
-Cohesion: 0.22
-Nodes (6): Adoption Guide: New Projects vs. Established Codebases, Connections, Connections, The two paths converge, Connections, Which path are you on?
+### Community 705 - "Find Skills"
+Cohesion: 0.14
+Nodes (13): Common Skill Categories, Find Skills, How to Help Users Find Skills, Step 1: Understand What They Need, Step 2: Check the Leaderboard First, Step 3: Search for Skills, Step 4: Verify Quality Before Recommending, Step 5: Present Options to the User (+5 more)
 
 ### Community 706 - "TypeScript Interface Patterns.md"
 Cohesion: 0.17
@@ -4282,9 +4307,13 @@ Nodes (6): APIs Recomendadas, Connections, Connections, Documentação, Connecti
 Cohesion: 0.22
 Nodes (6): apply_entries().md, Connections, Apply entries to a starting balance and return the result. Entries are (kind,….md, Connections, Connections, ledger.py.md
 
-### Community 717 - "_COMMUNITY__COMMUNITY_Community 36.md"
-Cohesion: 0.24
-Nodes (6): build, Connections, Connections, Connections, Connections, obsidian-vault/build.md
+### Community 716 - "web-quality/CLAUDE.md"
+Cohesion: 0.15
+Nodes (11): Adding a new skill, Available skills, Code style, Common tasks, Dependencies, Key thresholds, Live audit routing, Project summary (+3 more)
+
+### Community 717 - "Accessibility (a11y)"
+Cohesion: 0.17
+Nodes (12): Accessibility (a11y), ARIA usage (4.1.2), Color contrast (1.4.3, 1.4.6), Conformance levels, Evidence-led audit workflow, Live regions (4.1.3), Media alternatives (1.2), Perceivable (+4 more)
 
 ### Community 718 - "assert_eq()_1_1.md"
 Cohesion: 0.22
@@ -4314,9 +4343,9 @@ Nodes (6): Branch Naming, Connections, Branching Strategy, Connections, Connecti
 Cohesion: 0.22
 Nodes (6): Branch Naming, Connections, Branching Strategy, Connections, Connections, Feature Branches
 
-### Community 725 - "Path B  Brownfield incremental, verification-first.md"
-Cohesion: 0.22
-Nodes (6): Brownfield anti-patterns, Connections, Connections, Path B | Brownfield: incremental, verification-first, Connections, Phase 1 | Context and read-only skills
+### Community 725 - "Security reference"
+Cohesion: 0.17
+Nodes (10): Content Security Policy (CSP), HTTPS everywhere, Input sanitization, No vulnerable libraries, Secure cookies, Security headers, Security reference, Sources (+2 more)
 
 ### Community 726 - "CACHE_1.md"
 Cohesion: 0.22
@@ -4398,21 +4427,21 @@ Nodes (6): Component Architecture, Connections, Component Patterns, Connections,
 Cohesion: 0.22
 Nodes (6): Configuration & Customization, Connections, Connections, Project-Specific Enforcements (`AGENTS.md`), Connections, Sandbox Mode
 
-### Community 746 - "createReminder()_2.md"
-Cohesion: 0.22
-Nodes (6): Connections, Connections, Connections, createReminder().md, Connections, createReminder()
+### Community 746 - "core-web-vitals/SKILL.md"
+Cohesion: 0.24
+Nodes (6): Aggregation and reporting, Before changing the site, Collection rules, First-party real-user monitoring, Minimal collection pattern, Sources
 
-### Community 747 - "delete3mf()_1_1.md"
-Cohesion: 0.22
-Nodes (6): Connections, Connections, Connections, delete3mf()_1.md, Connections, delete3mf()
+### Community 747 - "_COMMUNITY__COMMUNITY_Community 3.md"
+Cohesion: 0.06
+Nodes (27): _COMMUNITY_Community 3.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes, Connections, Connections, Connections (+19 more)
 
 ### Community 748 - "deletePhoto()_1_1.md"
 Cohesion: 0.22
 Nodes (6): Connections, Connections, Connections, deletePhoto()_1.md, Connections, deletePhoto()
 
-### Community 749 - "deleteReminder()_2.md"
-Cohesion: 0.22
-Nodes (6): Connections, Connections, Connections, deleteReminder().md, Connections, deleteReminder()
+### Community 749 - "floor-guard-reference-test.js_1.md"
+Cohesion: 0.20
+Nodes (8): commitFile().md, Connections, Connections, floor-guard-reference-test.js.md, Connections, git().md, Connections, makeRepo().md
 
 ### Community 750 - "getOrderById()_1_1.md"
 Cohesion: 0.22
@@ -4450,45 +4479,45 @@ Nodes (6): Connections, Connections, Connections, updateOrder()_1.md, Connection
 Cohesion: 0.22
 Nodes (6): Connections, Connections, Connections, updateReminder().md, Connections, updateReminder()
 
-### Community 759 - "upload3mf()_1_1.md"
+### Community 759 - "DeadlineInfo_1.md"
+Cohesion: 0.17
+Nodes (8): Connections, Connections, Connections, deadline.ts.md, Connections, DeadlineInfo.md, Connections, DeadlineInfo
+
+### Community 760 - "WCAG 2.2 Quick Reference"
+Cohesion: 0.18
+Nodes (8): Level A (minimum), Level AA (standard), Level AAA (enhanced), Sources, Success criteria by level, Testing tools, WCAG 2.2 Quick Reference, What changed from 2.1 to 2.2
+
+### Community 761 - "Performance measurement workflow"
+Cohesion: 0.20
+Nodes (10): Compact audit output, Fallbacks when DevTools tools are unavailable, Keep the evidence types separate, Performance measurement workflow, Preferred low-friction route, Reading CrUX correctly, Reconciling lab and field, Repeatable lab comparisons (+2 more)
+
+### Community 762 - "budgetEngine.js"
 Cohesion: 0.22
-Nodes (6): Connections, Connections, Connections, upload3mf()_1.md, Connections, upload3mf()
+Nodes (9): calculateItemCosts(), DEFAULT_ACCESSORIES, DEFAULT_BUDGET_PARAMS, DEFAULT_FINISHES, DEFAULT_MATERIALS, DEFAULT_PACKAGING, DEFAULT_PRINTERS, DEFAULT_WHOLESALE (+1 more)
 
-### Community 760 - "fs_19.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, fs
+### Community 763 - "Accessibility Code Patterns"
+Cohesion: 0.22
+Nodes (9): Accessibility Code Patterns, ARIA tabs, Dragging movements, Error handling, Form labels, Live regions and notifications, Modal focus trap, Screen reader commands (+1 more)
 
-### Community 761 - "makeSandbox()_5.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, makeSandbox()
+### Community 764 - "Operable"
+Cohesion: 0.22
+Nodes (9): Dragging movements (2.5.7) — new in 2.2, Focus not obscured (2.4.11) — new in 2.2, Focus visible (2.4.7), Keyboard accessible (2.1), Motion (2.3), Operable, Skip links (2.4.1), Target size (2.5.8) — new in 2.2 (+1 more)
 
-### Community 762 - "os_9.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, os
+### Community 765 - "Cumulative Layout Shift (CLS)"
+Cohesion: 0.22
+Nodes (8): Animate without layout, Cumulative Layout Shift (CLS), Handle dynamic content deliberately, Inspect one browser session, Reserve media space, Sources, Stabilize fonts, Verification checklist
 
-### Community 763 - "path_19.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, path
+### Community 766 - "Interaction to Next Paint (INP)"
+Cohesion: 0.22
+Nodes (8): Check common causes, Diagnose the interaction phases, Inspect one browser session, Interaction to Next Paint (INP), Prioritize visible feedback, Sources, Verification checklist, Yield long work
 
-### Community 764 - "run()_6.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, run()
+### Community 767 - "{ after, before, test }_1.md"
+Cohesion: 0.22
+Nodes (6): { after, before, test }.md, Connections, { after, before, test }, Connections, Connections, Connections
 
-### Community 765 - "sandboxes_4.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, sandboxes
-
-### Community 766 - "SKILL_LINT_2.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, SKILL_LINT
-
-### Community 767 - "{ spawnSync }_5.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, { spawnSync }
-
-### Community 768 - "VALIDATOR_4.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, VALIDATOR
+### Community 768 - "assert_9_1.md"
+Cohesion: 0.22
+Nodes (6): assert, Connections, assert_9.md, Connections, Connections, Connections
 
 ### Community 769 - "description_2.md"
 Cohesion: 0.22
@@ -4534,9 +4563,9 @@ Nodes (6): Connections, Connections, Connections, deleteOrder()_1.md, Connection
 Cohesion: 0.22
 Nodes (5): Connections, Connections, Connections, Connections, version
 
-### Community 780 - "keywords.md"
+### Community 780 - "auth.tsx_1.md"
 Cohesion: 0.22
-Nodes (5): Connections, Connections, Connections, keywords, Connections
+Nodes (6): auth.tsx.md, Connections, AuthContext.md, Connections, AuthContextType.md, Connections
 
 ### Community 781 - "@typesnode_1.md"
 Cohesion: 0.22
@@ -4546,17 +4575,17 @@ Nodes (5): Connections, Connections, Connections, Connections, @types/node
 Cohesion: 0.22
 Nodes (6): Connections, Connections, Connections, handleSlicerChange().md, Connections, handleSlicerChange()
 
-### Community 783 - "preview.md"
+### Community 783 - "cases_1.md"
 Cohesion: 0.22
-Nodes (5): Connections, Connections, Connections, preview, Connections
+Nodes (6): cases.md, Connections, cases, Connections, Connections, Connections
 
-### Community 784 - "path_1_1.md"
+### Community 784 - "OrderStatus_1.md"
 Cohesion: 0.22
-Nodes (6): Connections, Connections, Connections, path_1.md, Connections, path
+Nodes (6): Connections, Connections, Connections, OrderStatus.md, Connections, OrderStatus
 
-### Community 785 - "PhotoUploadProps_1.md"
+### Community 785 - "getOrders()_2.md"
 Cohesion: 0.22
-Nodes (6): Connections, Connections, Connections, PhotoUploadProps.md, Connections, PhotoUploadProps
+Nodes (6): Connections, Connections, Connections, getOrders().md, Connections, getOrders()
 
 ### Community 786 - "plugins_1.md"
 Cohesion: 0.22
@@ -4910,9 +4939,9 @@ Nodes (4): agent-skills/skills/security-and-hardening/references/hardening-patte
 Cohesion: 0.33
 Nodes (3): agent-skills/skills/source-driven-development/SKILL.md, Connections, Connections
 
-### Community 875 - "dependencies"
-Cohesion: 0.25
-Nodes (8): dependencies, browser-image-compression, date-fns, react, react-colorful, react-dom, react-router-dom, @supabase/supabase-js
+### Community 875 - "name_4_1.md"
+Cohesion: 0.22
+Nodes (6): Connections, Connections, Connections, name_4.md, Connections, name
 
 ### Community 876 - "compilerOptions_3.md"
 Cohesion: 0.33
@@ -4935,8 +4964,8 @@ Cohesion: 0.33
 Nodes (4): ApplyEntriesTest, Connections, Connections, Connections
 
 ### Community 881 - "_COMMUNITY_supabase.md"
-Cohesion: 0.04
-Nodes (33): auth.tsx, Connections, AuthContext, Connections, AuthContextType, Connections, Connections to other communities, Live Query (requires Dataview plugin) (+25 more)
+Cohesion: 0.05
+Nodes (28): auth.tsx, Connections, AuthContext, Connections, AuthContextType, Connections, Connections to other communities, Live Query (requires Dataview plugin) (+20 more)
 
 ### Community 882 - "Security Checklist.md"
 Cohesion: 0.33
@@ -5062,9 +5091,9 @@ Nodes (4): Live Query (requires Dataview plugin), Members, tdd-stays-quiet-on-de
 Cohesion: 0.33
 Nodes (4): compilerOptions, Connections, Connections, tsBuildInfoFile
 
-### Community 914 - "Connections_152.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, generate-icons.mjs
+### Community 914 - "type.md"
+Cohesion: 0.22
+Nodes (5): Connections, Connections, Connections, type, Connections
 
 ### Community 915 - "Connections_100.md"
 Cohesion: 0.33
@@ -5074,25 +5103,25 @@ Nodes (4): Connections, Connections, Connections, sdd-cache-pre.sh script
 Cohesion: 0.33
 Nodes (4): Connections, Connections, Connections, reports.test.js
 
-### Community 917 - "Connections_158.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, slug.test.js
+### Community 917 - "editConstraints()_1.md"
+Cohesion: 0.22
+Nodes (6): Connections, Connections, Connections, editConstraints().md, Connections, editConstraints()
 
 ### Community 918 - "Connections_115.md"
 Cohesion: 0.33
 Nodes (4): Connections, Connections, Connections, webhook.test.js
 
-### Community 919 - "Connections_160.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, { slugify }
+### Community 919 - "fs_4_1.md"
+Cohesion: 0.22
+Nodes (6): Connections, Connections, Connections, fs, Connections, fs_4.md
 
 ### Community 920 - "Connections_137.md"
 Cohesion: 0.33
 Nodes (4): Connections, Connections, Connections, deadline.js
 
-### Community 921 - "Connections_140.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, supabase.js
+### Community 921 - "os_1_1.md"
+Cohesion: 0.22
+Nodes (6): Connections, Connections, Connections, os, Connections, os_1.md
 
 ### Community 922 - "Connections_146.md"
 Cohesion: 0.33
@@ -5197,6 +5226,22 @@ Nodes (4): Connections, Connections, Connections, private
 ### Community 947 - "Connections_383.md"
 Cohesion: 0.33
 Nodes (4): Connections, Connections, Connections, validate-commands-test.js
+
+### Community 948 - "path_4_1.md"
+Cohesion: 0.22
+Nodes (6): Connections, Connections, Connections, path, Connections, path_4.md
+
+### Community 949 - "REFERENCE_1.md"
+Cohesion: 0.22
+Nodes (6): Connections, Connections, Connections, REFERENCE.md, Connections, REFERENCE
+
+### Community 950 - "runGuard()_1.md"
+Cohesion: 0.22
+Nodes (6): Connections, Connections, Connections, runGuard().md, Connections, runGuard()
+
+### Community 951 - "sandboxes_5.md"
+Cohesion: 0.22
+Nodes (6): Connections, Connections, Connections, sandboxes.md, Connections, sandboxes
 
 ### Community 952 - "scripts.md"
 Cohesion: 0.33
@@ -5634,13 +5679,13 @@ Nodes (5): _COMMUNITY_Community 12.md, Connections to other communities, Live Qu
 Cohesion: 0.40
 Nodes (5): _COMMUNITY_Community 13.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
 
-### Community 1062 - "_COMMUNITY_Community 14.md"
-Cohesion: 0.40
-Nodes (5): _COMMUNITY_Community 14.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
+### Community 1062 - "{ spawnSync }_6.md"
+Cohesion: 0.22
+Nodes (6): Connections, Connections, Connections, { spawnSync }.md, Connections, { spawnSync }
 
-### Community 1063 - "_COMMUNITY_Community 15.md"
-Cohesion: 0.40
-Nodes (5): _COMMUNITY_Community 15.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
+### Community 1063 - "main.tsx.md"
+Cohesion: 0.22
+Nodes (6): Connections, main.tsx, Connections, react-dom, Connections, src_index
 
 ### Community 1064 - "ModelFileUpload()_2.md"
 Cohesion: 0.33
@@ -5654,9 +5699,9 @@ Nodes (5): _COMMUNITY_Community 19.md, Connections to other communities, Live Qu
 Cohesion: 0.40
 Nodes (5): _COMMUNITY_Community 28.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
 
-### Community 1067 - "_COMMUNITY_Community 30.md"
-Cohesion: 0.40
-Nodes (5): _COMMUNITY_Community 30.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
+### Community 1067 - "grilling/SKILL.md"
+Cohesion: 0.25
+Nodes (7): Common questions, It's working if, The round, the frontier, and who decides, What it does, What lives here and what lives in the wrappers, When to reach for it, Where it fits
 
 ### Community 1068 - "upload3mf()_4.md"
 Cohesion: 0.33
@@ -5670,13 +5715,13 @@ Nodes (5): _COMMUNITY_Community 36.md, Connections to other communities, Live Qu
 Cohesion: 0.40
 Nodes (5): _COMMUNITY_Community 37.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
 
-### Community 1071 - "_COMMUNITY_Community 3.md"
-Cohesion: 0.40
-Nodes (5): _COMMUNITY_Community 3.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
+### Community 1071 - "Common ARIA patterns"
+Cohesion: 0.25
+Nodes (8): Buttons, Common ARIA patterns, Error states, Form fields, Links, Live regions, Modals, Navigation
 
-### Community 1072 - "dev_1.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, dev
+### Community 1072 - "Understandable"
+Cohesion: 0.25
+Nodes (8): Accessible authentication (3.3.8) — new in 2.2, Consistent help (3.2.6) — new in 2.2, Consistent navigation (3.2.3), Error handling (3.3.1, 3.3.3), Form labels (3.3.2), Page language (3.1.1), Redundant entry (3.3.7) — new in 2.2, Understandable
 
 ### Community 1073 - "_COMMUNITY_Community 5.md"
 Cohesion: 0.40
@@ -5722,13 +5767,13 @@ Nodes (5): Connections to other communities, Documentation and ADRs, Live Query 
 Cohesion: 0.40
 Nodes (5): Connections to other communities, Doubt-Driven Development, Live Query (requires Dataview plugin), Members, Top bridge nodes
 
-### Community 1084 - "Encomendas 3D - PWA para Android + Computador"
-Cohesion: 0.40
-Nodes (5): Connections to other communities, Encomendas 3D - PWA para Android + Computador, Live Query (requires Dataview plugin), Members, Top bridge nodes
+### Community 1084 - "Structured data reference"
+Cohesion: 0.25
+Nodes (7): Article, Breadcrumbs, FAQ, Organization, Product, Structured data reference, Validation
 
-### Community 1085 - "lint_2.md"
-Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, lint
+### Community 1085 - "🐛 Resolução: Problema ao Adicionar Lembretes"
+Cohesion: 0.25
+Nodes (8): 1. Melhorias na mensagem de erro, 2. Banner informativo na lista, 🔗 Arquivos Relacionados, 🔧 Correções Implementadas, 🔍 Problema Reportado, 🐛 Resolução: Problema ao Adicionar Lembretes, 🎯 Resultado Esperado, 📊 Status Atual
 
 ### Community 1086 - "Frontend UI Engineering"
 Cohesion: 0.40
@@ -5770,9 +5815,9 @@ Nodes (5): Connections to other communities, Live Query (requires Dataview plugi
 Cohesion: 0.40
 Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, NotificationService.js, Top bridge nodes
 
-### Community 1096 - "NotificationService.ts.md"
-Cohesion: 0.05
-Nodes (37): checkAndSendScheduledNotifications(), Connections, collectPendingItems(), Connections, Connections to other communities, Live Query (requires Dataview plugin), Members, NotificationService.ts (+29 more)
+### Community 1096 - "NotificationService.ts"
+Cohesion: 0.40
+Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, NotificationService.ts, Top bridge nodes
 
 ### Community 1097 - "OpenCode Setup"
 Cohesion: 0.40
@@ -5782,25 +5827,25 @@ Nodes (5): Connections to other communities, Live Query (requires Dataview plugi
 Cohesion: 0.40
 Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, Optimization Patterns, Top bridge nodes
 
-### Community 1099 - "OrderDetail.tsx"
-Cohesion: 0.40
-Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, OrderDetail.tsx, Top bridge nodes
+### Community 1099 - "_COMMUNITY_OrderDetail.tsx.md"
+Cohesion: 0.07
+Nodes (23): Connections to other communities, Live Query (requires Dataview plugin), Members, OrderDetail.tsx, Top bridge nodes, Connections, deleteOrder(), Connections (+15 more)
 
 ### Community 1100 - "OrderForm.tsx"
 Cohesion: 0.40
 Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, OrderForm.tsx, Top bridge nodes
 
-### Community 1101 - "scripts_3.md"
+### Community 1101 - "Ideias Estratégicas de Produtividade para a Oficina 3D"
+Cohesion: 0.29
+Nodes (6): 1. Modo "Fila de Impressão" (Kanban por Máquina), 2. Alerta de Fim de Bobina (Controle de Estoque de Filamento), 3. Calculadora de Custo de Falha de Impressão (Taxa de Refugo), 4. Widget de Orçamento Relâmpago (Calculadora Rápida), 5. Integração com Calculadora de Custos da Planilha (Alternativa B), Ideias Estratégicas de Produtividade para a Oficina 3D
+
+### Community 1102 - "Runtime performance"
 Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, scripts
+Nodes (6): Avoid layout thrashing, Debounce expensive operations, Runtime performance, Smooth navigations with View Transitions, Use requestAnimationFrame, Virtualize long lists
 
-### Community 1102 - "package.json"
-Cohesion: 0.40
-Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, package.json, Top bridge nodes
-
-### Community 1103 - "Path A | Greenfield: full lifecycle from day one"
-Cohesion: 0.40
-Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, Path A | Greenfield: full lifecycle from day one, Top bridge nodes
+### Community 1103 - "On-page SEO"
+Cohesion: 0.33
+Nodes (6): Heading structure, Image SEO, Internal linking, Meta descriptions, On-page SEO, Title tags
 
 ### Community 1104 - "Performance Checklist"
 Cohesion: 0.40
@@ -5810,9 +5855,9 @@ Nodes (5): Connections to other communities, Live Query (requires Dataview plugi
 Cohesion: 0.40
 Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, Planning and Task Breakdown, Top bridge nodes
 
-### Community 1106 - "deletePhoto()_4.md"
+### Community 1106 - "🎯 Ideias de Notificação (Propostas)"
 Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, deletePhoto()
+Nodes (6): 🎯 Ideias de Notificação (Propostas), 💡 Opção 1: Email Automático (Recomendado), 💡 Opção 2: WhatsApp via Evolution API, 💡 Opção 3: PDF por Email Manual, 💡 Opção 4: GitHub Actions + Email, 💡 Opção 5: Telegram Bot (Mais Simples)
 
 ### Community 1107 - "🐛 Resolução: Problema ao Adicionar Lembretes"
 Cohesion: 0.40
@@ -5858,9 +5903,9 @@ Nodes (5): Connections to other communities, Live Query (requires Dataview plugi
 Cohesion: 0.40
 Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, storage.ts, Top bridge nodes
 
-### Community 1118 - "getSignedPhotoUrl()_4.md"
+### Community 1118 - "Connections_464.md"
 Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, getSignedPhotoUrl()
+Nodes (4): AlertsBanner.tsx, Connections, Connections, Connections
 
 ### Community 1119 - "Test-Driven Development"
 Cohesion: 0.40
@@ -5962,25 +6007,129 @@ Nodes (3): Integração Graphify + Obsidian, Live Query (requires Dataview plugi
 Cohesion: 0.67
 Nodes (3): Live Query (requires Dataview plugin), Members, Process
 
-### Community 1571 - "handleFileChange()_4.md"
+### Community 1191 - "AlertsBannerProps_2.md"
 Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, handleFileChange()
+Nodes (4): AlertsBannerProps, Connections, Connections, Connections
 
-### Community 1581 - "handleRemove()_4.md"
+### Community 1199 - "commitFile()_2.md"
 Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, handleRemove()
+Nodes (4): commitFile(), Connections, Connections, Connections
 
-### Community 1586 - "PhotoThumb()_2.md"
+### Community 1209 - "Connections_103.md"
 Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, PhotoThumb()
+Nodes (4): config-parser.test.js, Connections, Connections, Connections
 
-### Community 1587 - "uploadPhoto()_4.md"
+### Community 1242 - "Connections_11.md"
 Cohesion: 0.33
-Nodes (4): Connections, Connections, Connections, uploadPhoto()
+Nodes (4): Connections, Connections, Connections, validate-versions.js
 
-### Community 1593 - "obsidian-vault/skill-impact.md"
+### Community 1269 - "Connections_118.md"
 Cohesion: 0.33
-Nodes (3): Connections, Rejected Skill Changes, Connections
+Nodes (4): Connections, Connections, Connections, split.test.js
+
+### Community 1275 - "Connections_151.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, validate-artifact-paths.js
+
+### Community 1280 - "createOrder()_3.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, createOrder()
+
+### Community 1331 - "deleteOrder()_3.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, deleteOrder()
+
+### Community 1338 - "formatDateShort()_3.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, formatDateShort()
+
+### Community 1342 - "formatWhatsappForDisplay()_3.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, formatWhatsappForDisplay()
+
+### Community 1343 - "handleSubmit()_3.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, handleSubmit()
+
+### Community 1344 - "loadOrder()_3.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, loadOrder()
+
+### Community 1379 - "normalizeWhatsapp()_3.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, normalizeWhatsapp()
+
+### Community 1451 - "OrderForm()_2.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, OrderForm()
+
+### Community 1460 - "parseGrams()_3.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, parseGrams()
+
+### Community 1472 - "statusColors_2.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, statusColors
+
+### Community 1475 - "git()_2.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, git()
+
+### Community 1476 - "Connections_467.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, deadline.ts
+
+### Community 1477 - "DeadlineTagProps_2.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, DeadlineTagProps
+
+### Community 1478 - "Order_2.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, Order
+
+### Community 1479 - "OrderCardProps_2.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, OrderCardProps
+
+### Community 1512 - "Connections_506.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, skill-lint-test.js
+
+### Community 1518 - "Connections_76.md"
+Cohesion: 0.33
+Nodes (4): Connections, Connections, Connections, supabase.ts
+
+### Community 1521 - "@supabase/supabase-js"
+Cohesion: 0.33
+Nodes (3): @supabase/supabase-js, supabase, supabase
+
+### Community 1522 - "2.0.0"
+Cohesion: 0.40
+Nodes (4): 2.0.0, Changed, Changelog, Compatibility
+
+### Community 1565 - "Audit checklist"
+Cohesion: 0.40
+Nodes (5): Audit checklist, Code quality, Compatibility, Security (critical), UX
+
+### Community 1571 - "analyze.sh"
+Cohesion: 0.70
+Nodes (4): analyze_html(), fail(), analyze.sh script, to_json_array()
+
+### Community 1581 - "✅ Checklist de Diagnóstico"
+Cohesion: 0.40
+Nodes (5): 1. Verificar tabela no Supabase, 2. Verificar autenticação, 3. Testar criação manualmente, 4. Verificar erros no console, ✅ Checklist de Diagnóstico
+
+### Community 1586 - "📋 Instruções para o Usuário"
+Cohesion: 0.40
+Nodes (5): 📋 Instruções para o Usuário, Passo 1: Verificar se a tabela existe, Passo 2: Criar a tabela, Passo 3: Verificar políticas RLS, Passo 4: Testar criação
+
+### Community 1587 - "📐 Sistema de Orçamento e Precificação (Axiom 3D)"
+Cohesion: 0.40
+Nodes (4): 📄 Geração de Proposta para Cliente, ⚙️ Regras de Cálculo Implementadas, 📐 Sistema de Orçamento e Precificação (Axiom 3D), 📋 Visão Geral
+
+### Community 1593 - "agent-skills/README.md"
+Cohesion: 0.40
+Nodes (5): agent-skills/README.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
 
 ### Community 1599 - "Using agent-skills with GitHub Copilot.md"
 Cohesion: 0.33
@@ -5990,53 +6139,53 @@ Nodes (4): Connections, Usage Tips, Connections, Using agent-skills with GitHub 
 Cohesion: 0.40
 Nodes (5): API and Interface Design, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
 
-### Community 1602 - "Community 10"
+### Community 1602 - "Community 14"
 Cohesion: 0.40
-Nodes (5): Community 10, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
+Nodes (5): Community 14, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
 
-### Community 1603 - "Community 1"
+### Community 1603 - "_COMMUNITY_Community 16.md"
 Cohesion: 0.40
-Nodes (5): Community 1, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
+Nodes (5): _COMMUNITY_Community 16.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
 
-### Community 1607 - "_COMMUNITY_Community 1.md"
+### Community 1607 - "_COMMUNITY_Community 17.md"
 Cohesion: 0.40
-Nodes (5): _COMMUNITY_Community 1.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
+Nodes (5): _COMMUNITY_Community 17.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
 
-### Community 1608 - "_COMMUNITY_Community 40.md"
+### Community 1608 - "_COMMUNITY_Community 41.md"
 Cohesion: 0.40
-Nodes (5): _COMMUNITY_Community 40.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
+Nodes (5): _COMMUNITY_Community 41.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
 
-### Community 1630 - "_COMMUNITY_Community 42.md"
+### Community 1630 - "_COMMUNITY_Community 4.md"
 Cohesion: 0.40
-Nodes (5): _COMMUNITY_Community 42.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
+Nodes (5): _COMMUNITY_Community 4.md, Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes
 
 ### Community 1643 - "How agent-skills compares"
 Cohesion: 0.40
 Nodes (5): Connections to other communities, How agent-skills compares, Live Query (requires Dataview plugin), Members, Top bridge nodes
 
-### Community 1644 - "ModelFileUpload.tsx"
+### Community 1644 - "floor-guard-reference-test.js.md"
 Cohesion: 0.40
-Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, ModelFileUpload.tsx, Top bridge nodes
+Nodes (5): Connections to other communities, floor-guard-reference-test.js.md, Live Query (requires Dataview plugin), Members, Top bridge nodes
 
-### Community 1645 - "paginate().md"
-Cohesion: 0.40
-Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, paginate().md, Top bridge nodes
+### Community 1645 - "Common issues by impact"
+Cohesion: 0.50
+Nodes (4): Common issues by impact, Critical (fix immediately), Moderate (fix soon), Serious (fix before launch)
 
 ### Community 1646 - "Process"
 Cohesion: 0.40
 Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, Process, Top bridge nodes
 
-### Community 1647 - "ref_node_assert.md"
-Cohesion: 0.40
-Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, ref_node_assert.md, Top bridge nodes
+### Community 1647 - "✨ Novas Funcionalidades"
+Cohesion: 0.50
+Nodes (4): 🔔 Canais de Notificação, ✨ Novas Funcionalidades, 📋 Relatório de Pendências, 🔔 Sistema de Notificações Completo
 
-### Community 1648 - "ref_node_test.md"
-Cohesion: 0.40
-Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, ref_node_test.md, Top bridge nodes
+### Community 1648 - "📈 Próximos Passos Sugeridos"
+Cohesion: 0.50
+Nodes (4): Curto Prazo (Esta semana), Longo Prazo (Próximos meses), Médio Prazo (Próximas semanas), 📈 Próximos Passos Sugeridos
 
-### Community 1649 - "reports.test.js.md"
-Cohesion: 0.40
-Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, reports.test.js.md, Top bridge nodes
+### Community 1649 - "Testing checklist"
+Cohesion: 0.67
+Nodes (3): Automated testing, Manual testing, Testing checklist
 
 ### Community 1650 - "run-evals.js"
 Cohesion: 0.40
@@ -6046,36 +6195,22 @@ Nodes (5): Connections to other communities, Live Query (requires Dataview plugi
 Cohesion: 0.40
 Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, skill-lint-test.js, Top bridge nodes
 
-### Community 1652 - "slug.test.js.md"
-Cohesion: 0.40
-Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, slug.test.js.md, Top bridge nodes
-
-### Community 1653 - "total().md"
-Cohesion: 0.40
-Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes, total().md
-
 ### Community 1654 - "Using agent-skills with GitHub Copilot CLI"
 Cohesion: 0.40
 Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes, Using agent-skills with GitHub Copilot CLI
 
-### Community 1655 - "webhook.test.js.md"
-Cohesion: 0.40
-Nodes (5): Connections to other communities, Live Query (requires Dataview plugin), Members, Top bridge nodes, webhook.test.js.md
-
 ## Knowledge Gaps
-- **7703 isolated node(s):** `$schema`, `name`, `description`, `name`, `url` (+7698 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 7896 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **618 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **8016 isolated node(s):** `$schema`, `name`, `description`, `name`, `url` (+8011 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 8223 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **610 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `📋 Features Pendentes` connect `📋 Features Pendentes` to `_COMMUNITY__COMMUNITY_Community 12.md`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
-- **Why does `_COMMUNITY_Community 40.md` connect `_COMMUNITY_Community 40.md` to `_COMMUNITY__COMMUNITY_Community 40.md`?**
+- **Why does `🐛 Bugs Conhecidos` connect `🐛 Bugs Conhecidos` to `_COMMUNITY__COMMUNITY_Community 12.md`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **What connects `$schema`, `name`, `description` to the rest of the system?**
-  _7703 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _8016 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `skill-lint-test.js` be split into smaller, more focused modules?**
   _Cohesion score 0.06871035940803383 - nodes in this community are weakly interconnected._
 - **Should `ref_node_assert` be split into smaller, more focused modules?**
@@ -6084,3 +6219,5 @@ _Questions this graph is uniquely positioned to answer:_
   _Cohesion score 0.10160427807486631 - nodes in this community are weakly interconnected._
 - **Should `storage.js` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
+- **Should `validate-commands.js` be split into smaller, more focused modules?**
+  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
