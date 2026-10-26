@@ -5,11 +5,15 @@
 Módulo avançado de orçamento e precificação de impressão 3D implementado com base na planilha de custos da **Axiom 3D**. Permite montar orçamentos detalhados com múltiplos produtos (até 8 por pedido), aplicando automaticamente custos de máquina (depreciação, manutenção e energia), filamento (com percentual de perda), mão de obra, acabamentos, acessórios, embalagens e **descontos de atacado por quantidade**.
 
 **Data de Implementação**: 2026-10-25  
-**Versão**: 1.0.0  
-**Rota**: `/orcamento`  
+**Versão**: 1.1.0  
+**Rotas**: 
+- `/orcamento` (Calculadora e precificação completa)
+- `/orcamento/proposta` (Página executiva dedicada em formato A4 limpo para impressão e PDF)
+
 **Arquivos principais**: 
 - `src/lib/budgetEngine.ts` (Motor de cálculo com as fórmulas da planilha)
-- `src/pages/BudgetPage.tsx` (Interface de orçamento e proposta para cliente)
+- `src/pages/BudgetPage.tsx` (Interface de cálculo e parâmetros)
+- `src/pages/BudgetPrintPage.tsx` (Folha de proposta limpa otimizada para impressão em PDF)
 
 ---
 
@@ -33,6 +37,10 @@ Módulo avançado de orçamento e precificação de impressão 3D implementado c
 
 ---
 
-## 📄 Geração de Proposta para Cliente
+## 📄 Geração de Proposta Comercial para Cliente (`/orcamento/proposta`)
 
-Na tela de orçamento (`/orcamento`), o usuário pode preencher os dados do cliente, ajustar parâmetros financeiros e clicar em **"Imprimir / Salvar Proposta PDF"** para gerar um documento formatado profissionalmente pronto para exportação em PDF.
+A nova página dedicada `/orcamento/proposta` oferece:
+- **Preenchimento Rápido**: Informações do cliente (nome, telefone), validade da proposta em dias, observações e condições de pagamento.
+- **Gerenciamento de Itens**: Adição rápida de até 8 produtos com nome, quantidade e peso.
+- **Visualização A4 Limpa**: Um layout em papel branco corporativo contendo cabeçalho institucional, dados do cliente, tabela de itens detalhada, totais consolidados e espaço para assinatura.
+- **Impressão Direta**: Botão dedicado para disparar a impressão nativa do navegador ou salvamento em PDF, ocultando automaticamente todos os controles interativos através de regras `@media print`.

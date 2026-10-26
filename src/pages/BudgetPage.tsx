@@ -17,6 +17,9 @@ export default function BudgetPage() {
   const [clientName, setClientName] = useState('Augusto')
   const [clientPhone, setClientPhone] = useState('')
   const [clientEmail, setClientEmail] = useState('')
+  const [validityDays, setValidityDays] = useState(10)
+  const [notes, setNotes] = useState('Pagamento: 50% de entrada e 50% na entrega/envio.')
+
   const [params, setParams] = useState<BudgetParameters>(DEFAULT_BUDGET_PARAMS)
 
   const [items, setItems] = useState<BudgetLineItem[]>([
@@ -88,8 +91,25 @@ export default function BudgetPage() {
   const estimatedTax = totalOrder * params.taxPercent
   const estimatedProfit = totalOrder - totalProductionCost - estimatedTax
 
-  function handlePrintProposal() {
-    window.print()
+  function handleOpenProposal() {
+    // Salvar estado atual no sessionStorage para a página de proposta ler exatamente o que foi calculado
+    const proposalData = {
+      clientName,
+      clientPhone,
+      clientEmail,
+      validityDays,
+      notes,
+      params,
+      items,
+      calculatedItems,
+      totalPieces,
+      totalProductionCost,
+      subtotal,
+      discountAmount,
+      totalOrder
+    }
+    sessionStorage.setItem('axiom_proposal_data', JSON.stringify(proposalData))
+    navigate('/orcamento/proposta')
   }
 
   return (
@@ -97,7 +117,7 @@ export default function BudgetPage() {
       <div className="max-w-7xl mx-auto space-y-6">
 
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-[var(--color-surface-800)] border border-[var(--color-surface-600)] p-6 rounded-2xl shadow-xl no-print">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-[var(--color-surface-800)] border border-[var(--color-surface-600)] p-6 rounded-2xl shadow-xl">
           <div>
             <h1 className="text-2xl md:text-3xl font-extrabold text-white flex items-center gap-3">
               <span>📐</span> Orçamento & Precificação AXIOM 3D
@@ -114,7 +134,7 @@ export default function BudgetPage() {
               ← Voltar aos Pedidos
             </button>
             <button
-              onClick={() => navigate('/orcamento/proposta')}
+              onClick={handleOpenProposal}
               className="btn-primary flex items-center gap-2 text-sm bg-emerald-600 hover:bg-emerald-500"
             >
               <span>📄</span> Ver Proposta Pronta para Cliente
@@ -123,10 +143,10 @@ export default function BudgetPage() {
         </div>
 
         {/* Cliente & Parâmetros Financeiros */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 no-print">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-[var(--color-surface-800)] border border-[var(--color-surface-600)] p-5 rounded-2xl space-y-4">
             <h2 className="text-lg font-bold text-white flex items-center gap-2">
-              <span>👤</span> Dados do Cliente
+              <span>👤</span> Dados do Cliente & Proposta
             </h2>
             <div>
               <label className="block text-xs font-medium text-[var(--color-surface-300)] mb-1">Nome do Cliente</label>
@@ -147,13 +167,32 @@ export default function BudgetPage() {
                 className="input-field text-sm"
               />
             </div>
+            <div className="grid grid-cols-2 gap-2">
+              <div>
+                <label className="block text-xs font-medium text-[var(--color-surface-300)] mb-1">Validade (dias)</label>
+                <input
+                  type="number"
+                  value={validityDays}
+                  onChange={e => setValidityDays(Number(e.target.value))}
+                  className="input-field text-sm"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-medium text-[var(--color-surface-300)] mb-1">E-mail</label>
+                <input
+                  type="email"
+                  value={clientEmail}
+                  onChange={e => setClientEmail(e.target.value)}
+                  className="input-field text-sm"
+                />
+              </div>
+            </div>
             <div>
-              <label className="block text-xs font-medium text-[var(--color-surface-300)] mb-1">E-mail</label>
+              <label className="block text-xs font-medium text-[var(--color-surface-300)] mb-1">Condições / Observações</label>
               <input
-                type="email"
-                value={clientEmail}
-                onChange={e => setClientEmail(e.target.value)}
-                placeholder="cliente@email.com"
+                type="text"
+                value={notes}
+                onChange={e => setNotes(e.target.value)}
                 className="input-field text-sm"
               />
             </div>
@@ -262,12 +301,12 @@ export default function BudgetPage() {
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-medium text-[var(--color-surface-300)] mb-1">Quantidade (Qtd)</label>
+                    <label className="block text-xs font-medium text-[var(--color-surface-300)] mb-1">Quantidade de Peças</label>
                     <input
                       type="number"
                       min="1"
                       value={item.quantity}
-                      onChange={e => updateItem(item.id, 'quantity', Number(e.target.value))}
+                      onChange={e => updateItem(item.id, 'quantity', Math.max(1, Number(e.target.value)))}
                       className="input-field text-sm"
                     />
                   </div>
@@ -283,11 +322,8 @@ export default function BudgetPage() {
                       ))}
                     </select>
                   </div>
-                </div>
-
-                <div className="grid grid-cols-2 md:grid-cols-6 gap-3">
                   <div>
-                    <label className="block text-xs font-medium text-[var(--color-surface-300)] mb-1">Material</label>
+                    <label className="block text-xs font-medium text-[var(--color-surface-300)] mb-1">Filamento (Material)</label>
                     <select
                       value={item.materialName}
                       onChange={e => updateItem(item.id, 'materialName', e.target.value)}
@@ -329,7 +365,7 @@ export default function BudgetPage() {
                     />
                   </div>
                   <div>
-                    <label className="block text-xs font-medium text-[var(--color-surface-300)] mb-1">Acabamento 1</label>
+                    <label className="block text-xs font-medium text-[var(--color-surface-300)] mb-1">Acabamento</label>
                     <select
                       value={item.finish1}
                       onChange={e => updateItem(item.id, 'finish1', e.target.value)}
@@ -395,10 +431,10 @@ export default function BudgetPage() {
             <div>Impostos Estimados: <strong className="text-white">{formatBRL(estimatedTax)}</strong></div>
             <div>Lucro Total Estimado: <strong className="text-emerald-400 font-bold">{formatBRL(estimatedProfit)}</strong></div>
             <button
-              onClick={handlePrintProposal}
-              className="btn-primary text-sm px-6"
+              onClick={handleOpenProposal}
+              className="btn-primary text-sm px-6 bg-emerald-600 hover:bg-emerald-500"
             >
-              Gerar Proposta PDF para Cliente 📄
+              📄 Gerar Proposta PDF para Cliente
             </button>
           </div>
         </div>
