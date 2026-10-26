@@ -1,8 +1,8 @@
-name: Daily Pending Report
+name: Daily Pending Report (12-10)
 
 on:
   schedule:
-    - cron: '0 9 * * *' # Todo dia às 09:00 UTC
+    - cron: '10 12 * * *' # Todo dia às 12:10 UTC (Ajustado para horário desejado)
   workflow_dispatch:
 
 jobs:
@@ -20,10 +20,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run Daily Report Script
+      - name: Run Daily Email Report
         env:
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
-          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           ADMIN_EMAIL: ${{ secrets.ADMIN_EMAIL }}
