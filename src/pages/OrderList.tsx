@@ -75,6 +75,13 @@ export default function OrderList() {
         </div>
         <div className="flex items-center gap-2">
           <button
+            onClick={() => navigate('/orcamento')}
+            className="text-xs font-medium text-emerald-400 hover:text-emerald-300 px-2.5 py-1.5 rounded-lg bg-[#282a3a] border border-[#353849] transition-colors"
+            title="Calculadora e Orçamento Axiom 3D"
+          >
+            📐 Orçamento
+          </button>
+          <button
             onClick={() => navigate('/relatorio')}
             className="text-xs font-medium text-indigo-400 hover:text-indigo-300 px-2.5 py-1.5 rounded-lg bg-[#282a3a] border border-[#353849] transition-colors"
             title="Ver relatório de pendências"
