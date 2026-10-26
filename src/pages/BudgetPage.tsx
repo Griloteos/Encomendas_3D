@@ -114,10 +114,10 @@ export default function BudgetPage() {
               ← Voltar aos Pedidos
             </button>
             <button
-              onClick={handlePrintProposal}
-              className="btn-primary flex items-center gap-2 text-sm"
+              onClick={() => navigate('/orcamento/proposta')}
+              className="btn-primary flex items-center gap-2 text-sm bg-emerald-600 hover:bg-emerald-500"
             >
-              <span>🖨️</span> Imprimir / Salvar Proposta PDF
+              <span>📄</span> Ver Proposta Pronta para Cliente
             </button>
           </div>
         </div>
