@@ -2,7 +2,7 @@ name: Daily Pending Report (12-10)
 
 on:
   schedule:
-    - cron: '10 12 * * *' # Todo dia às 12:10 UTC (Ajustado para horário desejado)
+    - cron: '10 12 * * *' # Todo dia às 12:10 UTC
   workflow_dispatch:
 
 jobs:
