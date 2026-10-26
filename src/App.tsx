@@ -9,6 +9,7 @@ import ReminderList from './pages/ReminderList'
 import ReminderForm from './pages/ReminderForm'
 import ReportPage from './pages/ReportPage'
 import NotificationSettings from './pages/NotificationSettings'
+import BudgetPage from './pages/BudgetPage'
 import './App.css'
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
             <Route path="/lembretes/:id/editar" element={<ReminderForm />} />
             <Route path="/relatorio" element={<ReportPage />} />
             <Route path="/notificacoes" element={<NotificationSettings />} />
+            <Route path="/orcamento" element={<BudgetPage />} />
             <Route path="/" element={<Navigate to="/pedidos" replace />} />
           </Route>
           <Route path="*" element={<Navigate to="/" replace />} />
